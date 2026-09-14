@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Composição dos políticos e responsabilidades — História do Brasil</title>
+  <meta name="description" content="Municipal, estadual e federal: quem são e o que fazem." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="politicos">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">Estrutura do Estado</span>
+        <h1 class="page-title">Composição dos políticos e responsabilidades</h1>
+        <p class="page-subtitle">
+          Quem são os políticos nos níveis municipal, estadual e federal, e quais são
+          as responsabilidades de cada um.
+        </p>
+
+        <h2 class="section-title">Nível Municipal</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Cargo</th><th>Como é elegido</th><th>Responsabilidades</th></tr></thead>
+            <tbody>
+              <tr><td>Prefeito</td><td>Voto direto (4 anos)</td><td>Administra a cidade: saúde, educação, transporte, obras</td></tr>
+              <tr><td>Vereador</td><td>Voto direto (4 anos)</td><td>Faz leis municipais, fiscaliza o prefeito</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Nível Estadual</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Cargo</th><th>Como é elegido</th><th>Responsabilidades</th></tr></thead>
+            <tbody>
+              <tr><td>Governador</td><td>Voto direto (4 anos)</td><td>Administra o estado: segurança, saúde, educação, infraestrutura</td></tr>
+              <tr><td>Deputado Estadual</td><td>Voto direto (4 anos)</td><td>Faz leis estaduais, fiscaliza o governador</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Nível Federal</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Cargo</th><th>Como é elegido</th><th>Responsabilidades</th></tr></thead>
+            <tbody>
+              <tr><td>Presidente da República</td><td>Voto direto (4 anos)</td><td>Chefe de Estado e de Governo: política externa, economia, defesa</td></tr>
+              <tr><td>Deputado Federal</td><td>Voto direto (4 anos)</td><td>Faz leis federais, fiscaliza o Executivo</td></tr>
+              <tr><td>Senador</td><td>Voto direto (8 anos)</td><td>Legisla, julga (STF), representa o estado</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mermaid">
+flowchart LR
+    A["Município<br/>Prefeito + Vereadores"]
+    B["Estado<br/>Governador + Deputados Estaduais"]
+    C["União (Federal)<br/>Presidente + Deputados Federais + Senadores"]
+    A --- B --- C
+        </div>
+
+        <div class="callout info">
+          <strong>Divisão de competências</strong>
+          A Constituição (arts. 18–21) divide as responsabilidades: cada nível cuida
+          do que é mais próximo dos cidadãos (município), do que é regional (estado) e
+          do que é nacional (união). Há competências <em>exclusivas</em>,
+          <em>comuns</em> e <em>concorrentes</em>.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Município: prefeito e vereadores.</li>
+            <li>Estado: governador e deputados estaduais.</li>
+            <li>Federal: presidente, deputados federais e senadores.</li>
+            <li>Cada nível tem responsabilidades específicas (CF/88).</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

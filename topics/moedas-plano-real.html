@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instabilidade das moedas até o Plano Real — História do Brasil</title>
+  <meta name="description" content="Por que a instabilidade e as trocas de moeda, e como acabou com o Plano Real." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="moedas-plano-real">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1986–1994 · Nova República</span>
+        <h1 class="page-title">Instabilidade das moedas até o Plano Real</h1>
+        <p class="page-subtitle">
+          Por que houve instabilidade e trocas de moeda, e como a situação acabou com o
+          Plano Real.
+        </p>
+
+        <h2 class="section-title">Por que a instabilidade e as trocas de moeda</h2>
+        <p>
+          A partir dos anos 1980, o Brasil enfrentou <strong>hiperinflação</strong>:
+          preços subindo a taxas altíssimas, que destruíam o poder de compra. As causas
+          eram o <strong>gasto público descontrolado</strong>, a
+          <strong>dependência de financiamento pelo Banco Central</strong> (a
+          "moeda como fonte de receita") e a <strong>crise da dívida externa</strong>.
+        </p>
+        <p>
+          Para "esconder" a inflação e facilitar cálculos, o governo trocou a moeda
+          várias vezes:
+        </p>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Moeda</th><th>Período</th><th>Contexto</th></tr></thead>
+            <tbody>
+              <tr><td>Cruzeiro (Cz$)</td><td>1942–1986</td><td>Moeda original</td></tr>
+              <tr><td>Cruzado (Cz$)</td><td>1986</td><td>Plano Cruzado (Sarney)</td></tr>
+              <tr><td>Cruzado Novo (NCz$)</td><td>1988–1989</td><td>Reconversão</td></tr>
+              <tr><td>Cruzeiro (Cz$)</td><td>1989–1993</td><td>Volta ao nome antigo</td></tr>
+              <tr><td>Cruzeiro Real (CR$)</td><td>1993–1994</td><td>Plano Real (fase 1)</td></tr>
+              <tr><td>Real (R$)</td><td>1994–</td><td>Plano Real (fase 2), moeda atual</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mermaid">
+flowchart TD
+    A["Anos 80 — Hiperinflação"] --> B["1986 — Plano Cruzado (Cruzado)"]
+    B --> C["1988 — Cruzado Novo"]
+    C --> D["1989 — Volta ao Cruzeiro"]
+    D --> E["1990 — Plano Collor (falha)"]
+    E --> F["1993 — Plano Real (fase 1, UR)"]
+    F --> G["01/07/1994 — Real (R$)"]
+    G --> H["Estabilização da inflação"]
+        </div>
+
+        <h2 class="section-title">Quando e como acabou</h2>
+        <p>
+          O <strong>Plano Real</strong>, criado por <strong>Pérsio Arida</strong> e
+          implementado em <strong>1º de julho de 1994</strong>, encerrou a era da
+          hiperinflação. O plano combinou:
+        </p>
+        <ul class="content-list">
+          <li><strong>Disciplina fiscal</strong> — corte de gastos e superávit
+            primário.</li>
+          <li><strong>Unidade Real de Valor (URV)</strong> — uma "moeda virtual" que
+            ancorou expectativas antes da troca.</li>
+          <li><strong>Âncora cambial</strong> — o Real foi atrelado ao dólar para
+            dar confiança.</li>
+          <li><strong>Novo Banco Central independente</strong> — para controlar a
+            emissão de moeda.</li>
+        </ul>
+
+        <div class="callout">
+          <strong>Resultado</strong>
+          A inflação, que chegava a mais de 1.000% ao ano, caiu para níveis baixos. O
+          <strong>Real (R$)</strong> se tornou a moeda estável que o Brasil usa até
+          hoje.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Hiperinflação causada por gasto público e financiamento pelo BC.</li>
+            <li>Múltiplas trocas de moeda (Cruzado, Cruzado Novo, Cruzeiro, CR$).</li>
+            <li>Plano Real (1994) estabilizou a economia.</li>
+            <li>O Real (R$) é a moeda atual.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polêmicas na gestão do País — História do Brasil</title>
+  <meta name="description" content="Principais polêmicas da gestão pública brasileira." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="polemicas">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">Transversal</span>
+        <h1 class="page-title">Polêmicas na gestão do País</h1>
+        <p class="page-subtitle">
+          Um panorama das principais polêmicas que marcaram a gestão pública
+          brasileira ao longo das décadas.
+        </p>
+
+        <div class="callout info">
+          <strong>Como ler esta página</strong>
+          Polêmicas são temas que dividem opiniões. Aqui apresentamos o que está em
+          disputa e os principais argumentos de cada lado, para você formar sua própria
+          opinião com base em fatos.
+        </div>
+
+        <h2 class="section-title">Principais polêmicas</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Polêmica</th><th>Período</th><th>Em disputa</th></tr></thead>
+            <tbody>
+              <tr><td>Reformas trabalhistas</td><td>2017</td><td>Flexibilização da CLT vs. proteção ao trabalhador</td></tr>
+              <tr><td>Reforma da Previdência</td><td>2019</td><td>Sustentabilidade fiscal vs. direitos dos aposentados</td></tr>
+              <tr><td>Privatizações</td><td>1990s–</td><td>Eficiência vs. patrimônio público</td></tr>
+              <tr><td>Operação Lava Jato</td><td>2014–</td><td>Luta contra a corrupção vs. uso de delações</td></tr>
+              <tr><td>Orçamento e gastos públicos</td><td>Contínuo</td><td>Redução de gastos vs. investimento social</td></tr>
+              <tr><td>Política de preços (combustíveis, energia)</td><td>Contínuo</td><td>Autonomia de estatais vs. impacto no consumidor</td></tr>
+              <tr><td>Reforma administrativa</td><td>2020s</td><td>Redução do Estado vs. serviço público</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mermaid">
+flowchart TD
+    A["Decisão de política pública"] --> B["Impacto em diferentes grupos"]
+    B --> C["Apoio de uns, oposição de outros"]
+    C --> D["Debate público e polarização"]
+    D --> E["Polêmica"]
+        </div>
+
+        <h2 class="section-title">Por que as polêmicas importam</h2>
+        <ul class="content-list">
+          <li>Elas revelam <strong>conflitos de interesse</strong> e de valores na
+            sociedade.</li>
+          <li>Mostram como as <strong>decisões de governo</strong> afetam grupos
+            diferentes de forma desigual.</li>
+          <li>São um termômetro da <strong>saúde democrática</strong>: em uma
+            democracia, o debate é esperado e saudável.</li>
+        </ul>
+
+        <div class="callout">
+          <strong>Dica de estudo</strong>
+          Ao analisar uma polêmica, separe <strong>fatos</strong> (o que aconteceu) de
+          <strong>opiniões</strong> (o que cada lado defende) e busque fontes de
+          diferentes posições.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Polêmicas refletem conflitos de interesse e valores.</li>
+            <li>Exemplos: reformas, privatizações, Lava Jato, gastos públicos.</li>
+            <li>Em uma democracia, o debate é parte do processo.</li>
+            <li>Separe fatos de opiniões ao analisar.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

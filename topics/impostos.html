@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criação de impostos — História do Brasil</title>
+  <meta name="description" content="Nome, quando foi criado, onde é arrecadado e onde é utilizado." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="impostos">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">Estrutura do Estado</span>
+        <h1 class="page-title">Criação de impostos</h1>
+        <p class="page-subtitle">
+          Nome, quando foi criado, onde é arrecadado e onde é utilizado cada imposto
+          principal do Brasil.
+        </p>
+
+        <div class="callout info">
+          <strong>Por que impostos existem</strong>
+          Impostos financiam os serviços públicos (saúde, educação, segurança,
+          infraestrutura). A Constituição (arts. 145–169) organiza o
+          <strong>Sistema Tributário Nacional</strong> e define quem pode criar cada
+          imposto.
+        </div>
+
+        <h2 class="section-title">Impostos federais</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Imposto</th><th>Quando</th><th>Arrecadado por</th><th>Usado em</th></tr></thead>
+            <tbody>
+              <tr><td>IR (Imposto de Renda)</td><td>1923 (instituído); CF/88</td><td>Receita Federal</td><td>Gastos gerais da União</td></tr>
+              <tr><td>IPI (Prod. Industrial)</td><td>1941</td><td>Receita Federal</td><td>Política industrial</td></tr>
+              <tr><td>IOF (Operações Financeiras)</td><td>1969</td><td>Banco Central</td><td>Política monetária</td></tr>
+              <tr><td>Contribuições sociais (INSS, etc.)</td><td>Vários</td><td>Receita Federal</td><td>Previdência e saúde</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Impostos estaduais</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Imposto</th><th>Quando</th><th>Arrecadado por</th><th>Usado em</th></tr></thead>
+            <tbody>
+              <tr><td>ICMS (Circulação de Mercadorias)</td><td>1960s (CF/67); CF/88</td><td>Secretarias de Fazenda estaduais</td><td>Saúde, educação, segurança no estado</td></tr>
+              <tr><td>IPVA (Veículos)</td><td>1960s</td><td>Estados / DF</td><td>Infraestrutura de transportes</td></tr>
+              <tr><td>ITCMD (Heranças)</td><td>CF/88</td><td>Estados / DF</td><td>Gastos estaduais</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Impostos municipais</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Imposto</th><th>Quando</th><th>Arrecadado por</th><th>Usado em</th></tr></thead>
+            <tbody>
+              <tr><td>ISS (Serviços)</td><td>CF/88</td><td>Prefeituras</td><td>Serviços municipais</td></tr>
+              <tr><td>IPTU (Imóvel)</td><td>CF/88</td><td>Prefeituras</td><td>Obras e serviços da cidade</td></tr>
+              <tr><td>ITBI (Transmissão de Imóvel)</td><td>CF/88</td><td>Prefeituras</td><td>Gastos municipais</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mermaid">
+flowchart TD
+    A["Cidadão / Empresa"] --> B["União<br/>IR, IPI, IOF"]
+    A --> C["Estado<br/>ICMS, IPVA, ITCMD"]
+    A --> D["Município<br/>ISS, IPTU, ITBI"]
+    B --> E["Gastos federais"]
+    C --> F["Gastos estaduais"]
+    D --> G["Gastos municipais"]
+        </div>
+
+        <div class="callout">
+          <strong>Reforma Tributária</strong>
+          O Brasil tem debatido uma <strong>reforma tributária</strong> para simplificar
+          o sistema (que é considerado um dos mais complexos do mundo). A
+          <strong>Emenda Constitucional 132/2023</strong> aprovou a criação do
+          <strong>Imposto sobre Valor Agregado (IVA)</strong>, que unificará PIS,
+          Cofins, IPI, ICMS e ISS, em transição até 2033.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Impostos financiam serviços públicos.</li>
+            <li>Federais: IR, IPI, IOF. Estaduais: ICMS, IPVA. Municipais: ISS, IPTU.</li>
+            <li>Cada esfera cria e arrecada seus próprios impostos.</li>
+            <li>Reforma em curso: criação do IVA (EC 132/2023).</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diferenças de posições políticas — História do Brasil</title>
+  <meta name="description" content="Valores e pautas que cada lado defende." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="posicoes-politicas">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">Estrutura / Ciência Política</span>
+        <h1 class="page-title">Diferenças de posições políticas</h1>
+        <p class="page-subtitle">
+          Os valores e as pautas que cada lado do espectro político defende no Brasil.
+        </p>
+
+        <div class="callout info">
+          <strong>Como usar esta página</strong>
+          O espectro político é uma <em>simplificação</em>. Na prática, partidos e
+          pessoas ocupam posições variadas e misturam pautas. Use este mapa como ponto
+          de partida, não como rótulo definitivo.
+        </div>
+
+        <h2 class="section-title">O eixo econômico (esquerda × direita)</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Tema</th><th>Esquerda</th><th>Direita</th></tr></thead>
+            <tbody>
+              <tr><td>Papel do Estado</td><td>Estado forte, redistribuição</td><td>Estado menor, menos intervenção</td></tr>
+              <tr><td>Economia</td><td>Regulação, proteção social</td><td>Liberalismo, mercado livre</td></tr>
+              <tr><td>Impostos</td><td>Progressivos (mais de quem ganha mais)</td><td>Redução de impostos</td></tr>
+              <tr><td>Trabalho</td><td>Proteção ao trabalhador</td><td>Flexibilização</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">O eixo social (liberal × conservador)</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Tema</th><th>Liberal / Progressista</th><th>Conservador</th></tr></thead>
+            <tbody>
+              <tr><td>Direitos sociais</td><td>Ampliação (gênero, raça, LGBTQIA+)</td><td>Tradição e valores familiares</td></tr>
+              <tr><td>Religião</td><td>Laicidade do Estado</td><td>Influência religiosa na política</td></tr>
+              <tr><td>Segurança</td><td>Prevenção e causas sociais</td><td>Tolerância zero, punição</td></tr>
+              <tr><td>Ambiente</td><td>Agenda climática</td><td>Prioridade ao desenvolvimento</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mermaid">
+flowchart TD
+    A["Espectro político"] --> B["Eixo econômico<br/>Esquerda × Direita"]
+    A --> C["Eixo social<br/>Liberal × Conservador"]
+    B --> D["Papel do Estado, impostos, trabalho"]
+    C --> E["Direitos sociais, religião, segurança"]
+        </div>
+
+        <h2 class="section-title">Pautas que cada lado defende (resumo)</h2>
+        <ul class="content-list">
+          <li><strong>Esquerda / progressistas</strong> — redução de desigualdades,
+            ampliação de direitos sociais, papel redistributivo do Estado, agenda
+            ambiental.</li>
+          <li><strong>Direita / liberais</strong> — redução do Estado, liberdade
+            econômica, segurança pública, valores tradicionais.</li>
+          <li><strong>Centro</strong> — posições moderadas, pragmatismo, coalizões.</li>
+        </ul>
+
+        <div class="callout warn">
+          <strong>Cuidado com os rótulos</strong>
+          No Brasil, as fronteiras entre esquerda e direita nem sempre são claras:
+          partidos podem ser de direita na economia e progressistas na sociedade, ou o
+          contrário. Analise as <em>pautas específicas</em> de cada partido, não só o
+          rótulo.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Dois eixos: econômico (esquerda×direita) e social (liberal×conservador).</li>
+            <li>Esquerda: Estado forte, redistribuição, direitos sociais.</li>
+            <li>Direita: Estado menor, mercado, valores tradicionais.</li>
+            <li>Analise pautas específicas, não só rótulos.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

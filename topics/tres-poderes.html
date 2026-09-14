@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Três poderes e suas responsabilidades — História do Brasil</title>
+  <meta name="description" content="Como se elegem e o que fazem os três poderes." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="tres-poderes">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">Estrutura do Estado</span>
+        <h1 class="page-title">Três poderes e suas responsabilidades</h1>
+        <p class="page-subtitle">
+          Como se elegem e o que fazem o Executivo, o Legislativo e o Judiciário.
+        </p>
+
+        <h2 class="section-title">Poder Executivo</h2>
+        <p>
+          <strong>Como se elege:</strong> o Presidente da República é eleito por
+          <strong>voto direto</strong> do povo, para mandato de 4 anos (com possibilidade
+          de reeleição). Governadores e prefeitos seguem o mesmo modelo em seus
+          respectivos níveis.
+        </p>
+        <p>
+          <strong>O que faz:</strong> administra o país, executa as leis, propõe
+          projetos de lei, nomeia ministros, comanda a política externa e a defesa, e
+          gerencia o orçamento.
+        </p>
+
+        <h2 class="section-title">Poder Legislativo</h2>
+        <p>
+          <strong>Como se elege:</strong> os deputados federais, senadores, deputados
+          estaduais e vereadores são eleitos por <strong>voto direto</strong>.
+        </p>
+        <p>
+          <strong>O que faz:</strong> <strong>faz as leis</strong> (elabora, debate e
+          aprova projetos), <strong>fiscaliza</strong> o Executivo (CPIs, orçamento) e,
+          no caso do Senado, <strong>julga</strong> autoridades (em conjunto com o
+          STF).
+        </p>
+
+        <h2 class="section-title">Poder Judiciário</h2>
+        <p>
+          <strong>Como se "elege":</strong> os juízes e ministros <strong>não são
+          eleitos</strong> pelo voto popular. Entram por <strong>concurso público</strong>
+          (juízes) ou por <strong>nomeação</strong> (ministros dos tribunais superiores,
+          indicados pelo Presidente e aprovados pelo Senado).
+        </p>
+        <p>
+          <strong>O que faz:</strong> <strong>interpreta e aplica as leis</strong>,
+          resolve conflitos e garante que os outros poderes respeitem a Constituição.
+          O <strong>Supremo Tribunal Federal (STF)</strong> é a corte máxima.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    E["Executivo<br/>Administra e executa"]
+    L["Legislativo<br/>Faz leis e fiscaliza"]
+    J["Judiciário<br/>Interpreta e julga"]
+    E -->|Propõe leis| L
+    L -->|Aprova leis| E
+    E -->|Submete atos| J
+    L -->|Submete leis| J
+    J -->|Controle de constitucionalidade| E
+    J -->|Controle de constitucionalidade| L
+        </div>
+
+        <div class="callout info">
+          <strong>Freios e contrapesos</strong>
+          A separação dos três poderes (inspirada em Montesquieu) existe para evitar a
+          concentração de poder. Cada poder "freia" os outros: o Legislativo fiscaliza
+          o Executivo, o Judiciário controla a constitucionalidade, e o Executivo
+          propõe leis e nomeia juízes.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Executivo: administra (eleito por voto direto).</li>
+            <li>Legislativo: faz leis e fiscaliza (eleito por voto direto).</li>
+            <li>Judiciário: interpreta e julga (concurso/nomeação, não voto).</li>
+            <li>Freios e contrapesos evitam concentração de poder.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

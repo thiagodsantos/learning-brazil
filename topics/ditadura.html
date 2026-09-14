@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ditadura Militar — História do Brasil</title>
+  <meta name="description" content="Quando e por que ocorreu a Ditadura Militar, apoiadores e como acabou." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="ditadura">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1964–1985 · Regime Militar</span>
+        <h1 class="page-title">Ditadura Militar</h1>
+        <p class="page-subtitle">
+          Quando e por que ocorreu, quem apoiou, os envolvidos e como o regime acabou.
+        </p>
+
+        <h2 class="section-title">Quando e por que ocorreu</h2>
+        <p>
+          O <strong>golpe de 31 de março de 1964</strong> depôs o presidente
+          <strong>Jânio Quadros</strong> (que havia renunciado) e, em seguida,
+          <strong>João Goulart</strong>, interrompendo a democracia. O regime militar
+          durou de <strong>1964 a 1985</strong>, com governos de generais e, no final,
+          de civis nomeados pelos militares.
+        </p>
+        <p>
+          As causas: o medo de um "avanço comunista" durante a Guerra Fria, a
+          insatisfação das Forças Armadas com as reformas de base de Jango, e o apoio
+          de setores econômicos, midiáticos e internacionais (incluindo os EUA).
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["1961 — Jango assume, reformas de base"] --> B["31/03/1964 — Golpe militar"]
+    B --> C["AI-5 (1968) — repressão máxima"]
+    C --> D["Anos de chumbo: censura, tortura, exílio"]
+    D --> E["1974 — 'abertura lenta e gradual'"]
+    E --> F["1979 — Anistia"]
+    F --> G["1984 — Diretas Já"]
+    G --> H["1985 — Collor eleito, fim do regime"]
+        </div>
+
+        <h2 class="section-title">Quem apoiou</h2>
+        <ul class="content-list">
+          <li><strong>Forças Armadas</strong> — lideraram e sustentaram o regime.</li>
+          <li><strong>Setores econômicos e empresariais</strong> — apoiaram o
+            "milagre econômico" e a estabilidade.</li>
+          <li><strong>Imprensa e parte da sociedade</strong> — apoiaram o golpe em 1964,
+            embora a oposição crescesse com a repressão.</li>
+          <li><strong>Governo dos EUA</strong> — apoio diplomático e, em parte, logístico.</li>
+        </ul>
+
+        <h2 class="section-title">Políticos, pessoas e empresas envolvidas</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Ator</th><th>Papel</th></tr></thead>
+            <tbody>
+              <tr><td>Generais (Castello Branco, Médici, Geisel, Figueiredo)</td><td>Presidentes militares</td></tr>
+              <tr><td>AI-5 (1968)</td><td>Atos Institucionais que fecharam o Congresso e suspenderam direitos</td></tr>
+              <tr><td>DOI-CODI</td><td>Órgão de repressão e tortura</td></tr>
+              <tr><td>Empresas de construção e bancos</td><td>Beneficiadas por obras e contratos públicos</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Quando e como acabou</h2>
+        <p>
+          O regime entrou em crise com a estagnação econômica, o custo da repressão e
+          a pressão da sociedade. A <strong>anistia de 1979</strong>, o movimento
+          <strong>Diretas Já (1984)</strong> e a campanha
+          <strong>"Diretas Já / Tanque de Petróleo"</strong> levaram à eleição indireta
+          de <strong>Tancredo Neves</strong> (que morreu antes de empossar) e à
+          posse de <strong>José Sarney</strong> em 1985, encerrando o período militar.
+        </p>
+
+        <div class="callout warn">
+          <strong>Memória</strong>
+          O período deixou um saldo de <strong>violações de direitos humanos</strong>:
+          censura, tortura, mortes e desaparecimentos de opositores. A
+          <strong>Comissão Nacional da Verdade (2014)</strong> documentou esses crimes.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Golpe em 31/03/1964; fim em 1985.</li>
+            <li>AI-5 (1968) marcou o auge da repressão.</li>
+            <li>Apoiado por militares, empresários e EUA.</li>
+            <li>Acabou com a anistia, Diretas Já e a eleição de Tancredo/Sarney.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

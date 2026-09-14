@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proclamação da República — História do Brasil</title>
+  <meta name="description" content="A queda do Império em 1889 e os efeitos colaterais." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="republica">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1889 · República</span>
+        <h1 class="page-title">Proclamação da República</h1>
+        <p class="page-subtitle">
+          A queda do Império, o golpe militar de 15 de novembro de 1889 e os efeitos
+          colaterais da mudança de regime.
+        </p>
+
+        <h2 class="section-title">O que aconteceu</h2>
+        <p>
+          Em <strong>15 de novembro de 1889</strong>, o marechal
+          <strong>Deodoro da Fonseca</strong> liderou um movimento militar que depôs o
+          imperador <strong>D. Pedro II</strong> e proclamou a República. O Brasil
+          deixou de ser monarquia e passou a ser uma república presidencialista.
+        </p>
+        <p>
+          A crise do Império vinha de longe: a abolição da escravidão (1888) tirou o
+          apoio da elite agrária ao Imperador; o conflito entre o Exército e a Igreja
+          (Questão Religiosa); e a insatisfação dos militares, que se sentiam
+          marginalizados. A República foi, em grande parte, um <strong>golpe de
+          caserna</strong> — não houve consulta popular.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["1888 — Abolição enfraquece o Império"] --> B["Conflitos: Exército x Igreja, militares insatisfeitos"]
+    B --> C["15/11/1889 — Golpe de Deodoro da Fonseca"]
+    C --> D["D. Pedro II exilado"]
+    D --> E["República Velha (1889–1930)"]
+    E --> F["Política dos Governadores / Café com Leite"]
+        </div>
+
+        <h2 class="section-title">Efeitos colaterais</h2>
+        <ul class="content-list">
+          <li><strong>República "de caserna"</strong> — proclamada por militares, sem
+            participação popular; a maioria da população continuava sem voto.</li>
+          <li><strong>República Velha (1889–1930)</strong> — dominada pelas oligarquias
+            rurais, com a "política dos governadores" e a aliança
+            <em>café com leite</em> (São Paulo e Minas Gerais).</li>
+          <li><strong>Corrupção e coronelismo</strong> — o poder local concentrado nos
+            "coronéis" marcou a política do período.</li>
+          <li><strong>Exílio de D. Pedro II</strong> — a família imperial partiu para a
+            Europa, onde permaneceu até hoje.</li>
+        </ul>
+
+        <div class="callout warn">
+          <strong>Atenção</strong>
+          A Proclamação da República não trouxe democracia plena. O voto era restrito
+          (excluíam mulheres, analfabetos, militares de baixa patente e "serventes de
+          ofício"), e o sistema era marcado pelo voto de cabresto e pelo coronelismo.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Data: 15 de novembro de 1889.</li>
+            <li>Liderada pelo marechal Deodoro da Fonseca.</li>
+            <li>Depôs D. Pedro II, que foi exilado.</li>
+            <li>Iniciou a República Velha, dominada pelas oligarquias rurais.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

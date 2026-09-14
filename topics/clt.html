@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regularização do trabalho (CLT) — História do Brasil</title>
+  <meta name="description" content="Quando e por que ocorreu a CLT, quem apoiou, direitos e deveres." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="clt">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1943 · Era Vargas</span>
+        <h1 class="page-title">Regularização do trabalho (CLT)</h1>
+        <p class="page-subtitle">
+          Quando e por que ocorreu, quem apoiou e os direitos e deveres que a CLT trouxe.
+        </p>
+
+        <h2 class="section-title">Quando e por que ocorreu</h2>
+        <p>
+          A <strong>Consolidação das Leis do Trabalho (CLT)</strong> foi criada pelo
+          <strong>Decreto-Lei nº 5.452, de 1º de maio de 1943</strong>, durante o
+          Estado Novo de <strong>Getúlio Vargas</strong>. O objetivo era unificar e
+          regularizar as relações de trabalho no Brasil, que até então eram caóticas e
+          marcadas por abusos.
+        </p>
+        <p>
+          O contexto: a industrialização acelerada dos anos 1930–40 trouxe uma grande
+          massa de trabalhadores urbanos. Vargas usou a legislação trabalhista como
+          instrumento de <strong>controle social</strong> — ao dar direitos, também
+          criava uma estrutura de fiscalização e de vínculo com o Estado.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["1930 — Revolução de 1930, Vargas no poder"] --> B["1937 — Estado Novo"]
+    B --> C["Industrialização e crescimento do operariado"]
+    C --> D["01/05/1943 — CLT (Decreto-Lei 5.452)"]
+    D --> E["Ministério do Trabalho"]
+    E --> F["Justiça do Trabalho (1939/1946)"]
+        </div>
+
+        <h2 class="section-title">Quem apoiou</h2>
+        <ul class="content-list">
+          <li><strong>Getúlio Vargas e o Estado Novo</strong> — usaram a CLT para
+            modernizar o país e controlar o movimento operário.</li>
+          <li><strong>Sindicatos e parte do operariado</strong> — ganharam direitos,
+            embora os sindicatos tenham sido subordinados ao Estado (peleguismo).</li>
+          <li><strong>Empresários industriais</strong> — aceitaram a regulação em troca
+            de previsibilidade nas relações de trabalho.</li>
+        </ul>
+
+        <h2 class="section-title">Direitos e deveres</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Direitos do trabalhador</th><th>Deveres / contrapartidas</th></tr></thead>
+            <tbody>
+              <tr><td>Jornada de 8h diárias / 44h semanais</td><td>Assiduidade e cumprimento das normas</td></tr>
+              <tr><td>Salário mínimo</td><td>Respeito à hierarquia e ao contrato</td></tr>
+              <tr><td>Férias anuais remuneradas (+ 1/3)</td><td>Período de experiência</td></tr>
+              <tr><td>13º salário</td><td>Estabilidade após período aquisitivo</td></tr>
+              <tr><td>Aviso prévio e FGTS (posterior)</td><td>Contribuições previdenciárias</td></tr>
+              <tr><td>Segurança e saúde no trabalho</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout info">
+          <strong>Legado</strong>
+          A CLT criou a base do <strong>Estado trabalhista</strong> brasileiro:
+          Ministério do Trabalho, Justiça do Trabalho e uma rede de direitos que,
+          apesar de reformas posteriores, ainda estrutura o mercado de trabalho formal.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Criada em 1º de maio de 1943 (Decreto-Lei 5.452).</li>
+            <li>Contexto: Estado Novo de Vargas e industrialização.</li>
+            <li>Unificou as leis trabalhistas e criou direitos fundamentais.</li>
+            <li>Instrumento de modernização e de controle social.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

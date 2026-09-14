@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privatizações — História do Brasil</title>
+  <meta name="description" content="Quais foram as privatizações, houve benefícios e os envolvidos." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="privatizacoes">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1990s · Nova República</span>
+        <h1 class="page-title">Privatizações</h1>
+        <p class="page-subtitle">
+          Quais foram as principais privatizações, se houve benefícios e os políticos,
+          pessoas e empresas envolvidas.
+        </p>
+
+        <h2 class="section-title">Quais foram</h2>
+        <p>
+          As <strong>privatizações</strong> no Brasil concentraram-se nos
+          <strong>anos 1990</strong>, principalmente nos governos de
+          <strong>Fernando Collor</strong> e <strong>Itamar Franco</strong>, com a
+          criação da <strong>BRParticipações</strong> (1993) para gerir o processo.
+          O objetivo era reduzir o tamanho do Estado, cortar déficits e modernizar
+          setores estratégicos.
+        </p>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Empresa / Setor</th><th>Ano</th><th>Destino</th></tr></thead>
+            <tbody>
+              <tr><td>Celular (Telefônica, Vivo, etc.)</td><td>1998</td><td>Leilão das concessões de telefonia</td></tr>
+              <tr><td>Petrobras (parcial)</td><td>1997</td><td>Abertura de capital (IPO)</td></tr>
+              <tr><td>Copel, CEEE, CEMIG (parcial)</td><td>1990s</td><td>Energia elétrica</td></tr>
+              <tr><td>Companhias siderúrgicas (CSN, etc.)</td><td>1990s</td><td>Siderurgia</td></tr>
+              <tr><td>Embraer (parcial)</td><td>1994</td><td>Aeronaútica</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mermaid">
+flowchart TD
+    A["Anos 90 — Crise fiscal e Estado inchado"] --> B["1993 — BRParticipações criada"]
+    B --> C["Leilões e IPOs"]
+    C --> D["1997–98 — Telecom e energia"]
+    D --> E["Redução do déficit público"]
+    E --> F["Modernização e investimento privado"]
+        </div>
+
+        <h2 class="section-title">Houve ou não benefícios</h2>
+        <p>
+          O tema é <strong>polêmico</strong> e divide opiniões:
+        </p>
+        <ul class="content-list">
+          <li><strong>A favor</strong> — as privatizações reduziram o déficit público,
+            atraíram investimento, modernizaram setores (especialmente telecomunicações)
+            e ampliaram o acesso a serviços.</li>
+          <li><strong>Contra</strong> — críticos apontam perdas de patrimônio público,
+            aumento de preços em alguns serviços, desemprego e favorecimento a grupos
+            econômicos específicos.</li>
+        </ul>
+
+        <h2 class="section-title">Políticos, pessoas e empresas envolvidas</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Ator</th><th>Papel</th></tr></thead>
+            <tbody>
+              <tr><td>Itamar Franco / Fernando Henrique Cardoso</td><td>Presidentes que conduziram o processo</td></tr>
+              <tr><td>BRParticipações</td><td>Órgão gestor das privatizações</td></tr>
+              <tr><td>Telefônica, Ambev, CSN, etc.</td><td>Empresas que compraram ativos</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout info">
+          <strong>Visão equilibrada</strong>
+          A maioria dos economistas reconhece que as privatizações dos anos 90
+          contribuíram para a estabilização fiscal e o crescimento, mas o debate sobre
+          a distribuição dos ganhos e os preços dos serviços continua.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Concentradas nos anos 1990 (Collor e Itamar/FHC).</li>
+            <li>Setores: telecom, energia, siderurgia, petróleo.</li>
+            <li>Reduziram o déficit e modernizaram setores.</li>
+            <li>Polêmico: ganhos fiscais vs. críticas sobre preços e patrimônio.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

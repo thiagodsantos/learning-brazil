@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plano Collor — História do Brasil</title>
+  <meta name="description" content="Quando e por que ocorreu o Plano Collor, apoiadores e como acabou." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="plano-collor">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1990 · Nova República</span>
+        <h1 class="page-title">Plano Collor</h1>
+        <p class="page-subtitle">
+          Quando e por que ocorreu, quem apoiou, os envolvidos e como o plano acabou.
+        </p>
+
+        <h2 class="section-title">Quando e por que ocorreu</h2>
+        <p>
+          O <strong>Plano Collor</strong> foi anunciado em <strong>15 de março de
+          1990</strong>, logo após a posse do presidente
+          <strong>Fernando Collor</strong>. O objetivo era combater a
+          <strong>hiperinflação</strong> que consumia o poder de compra dos
+          brasileiros.
+        </p>
+        <p>
+          O plano foi radical: <strong>congelou depósitos em poupança e contas
+          correntes</strong> acima de um certo valor (o "confisco"), controlou preços,
+          reduziu o gasto público e tentou cortar a demanda para "quebrar a inércia
+          inflacionária".
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["1990 — Hiperinflação"] --> B["15/03/1990 — Plano Collor anunciado"]
+    B --> C["Congelamento de poupança e contas (confisco)"]
+    C --> D["Controle de preços e corte de gastos"]
+    D --> E["Reação negativa da sociedade"]
+    E --> F["1992 — Impeachment de Collor"]
+    F --> G["Itamar Franco assume, Plano Real (1994)"]
+        </div>
+
+        <h2 class="section-title">Quem apoiou</h2>
+        <ul class="content-list">
+          <li><strong>Equipe econômica de Collor</strong> — liderada pelo ministro
+            <strong>Bernardo Figueiredo</strong> (e depois Pérsio Arida).</li>
+          <li><strong>Setores que queriam choque anti-inflacionário</strong> — parte do
+            mercado e da opinião pública, cansada da inflação.</li>
+        </ul>
+
+        <h2 class="section-title">Políticos, pessoas e empresas envolvidas</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Ator</th><th>Papel</th></tr></thead>
+            <tbody>
+              <tr><td>Fernando Collor</td><td>Presidente que lançou o plano</td></tr>
+              <tr><td>Bernardo Figueiredo</td><td>Ministro da Fazenda (1º)</td></tr>
+              <tr><td>Pérsio Arida</td><td>Ministro da Fazenda (2º), autor do Plano Real</td></tr>
+              <tr><td>Itamar Franco</td><td>Vice que assumiu após o impeachment</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Quando e como acabou</h2>
+        <p>
+          O plano <strong>não conseguiu estabilizar a economia</strong> e o "confisco"
+          gerou enorme rejeição popular. Collor foi afastado e, em
+          <strong>1992</strong>, sofreu <strong>impeachment</strong> por corrupção.
+          O vice <strong>Itamar Franco</strong> assumiu e, em <strong>1994</strong>,
+          implementou o <strong>Plano Real</strong>, que finalmente estabilizou a
+          inflação.
+        </p>
+
+        <div class="callout warn">
+          <strong>Lição</strong>
+          O Plano Collor mostrou que medidas de choque sem lastro fiscal e sem apoio
+          social tendem a falhar. A estabilização só veio com o Plano Real, que
+          combinou disciplina fiscal, âncora de moeda e novas regras.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Anunciado em 15/03/1990 por Fernando Collor.</li>
+            <li>Usou congelamento de depósitos ("confisco").</li>
+            <li>Não estabilizou a inflação e gerou rejeição.</li>
+            <li>Collor foi impeachmentado em 1992; o Plano Real veio em 1994.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

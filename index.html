@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>História do Brasil — Roteiro de Aprendizado</title>
+  <meta name="description" content="Site estático que ensina sobre a história do Brasil, organizado em um roteiro cronológico de tópicos." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-topic="">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">Roteiro de aprendizado</span>
+        <h1 class="page-title">Aprendendo sobre a história do Brasil</h1>
+        <p class="page-subtitle">
+          Um roteiro cronológico — do mais antigo ao mais recente — para entender os grandes
+          acontecimentos, as estruturas do Estado e as polêmicas que moldaram o Brasil.
+          Cada tópico tem uma página dedicada com explicação detalhada e diagramas.
+        </p>
+
+        <div class="callout info">
+          <strong>Como usar este site</strong>
+          Siga a linha do tempo abaixo na ordem. Cada cartão leva à página do tópico,
+          onde você encontra a explicação completa, um diagrama Mermaid e as referências.
+          Use a barra lateral para pular entre tópicos.
+        </div>
+
+        <h2 class="section-title">Linha do tempo</h2>
+        <div class="roadmap" id="roadmap"></div>
+
+        <div class="card" style="margin-top:2rem;">
+          <h3 style="margin-top:0;">📚 Referências</h3>
+          <p style="margin-bottom:0.5rem;">
+            Livros, cursos, vídeos, artigos e documentação organizados por tópico.
+          </p>
+          <a href="references.html" class="inline-block font-semibold" style="color:var(--blue);">
+            Ver todas as referências →
+          </a>
+        </div>
+
+        <footer class="page-footer">
+          <p>
+            Projeto de estudo sobre a história do Brasil · HTML + Tailwind CSS + JavaScript puro + Mermaid.
+            <a href="references.html">Referências</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/topics.js"></script>
+  <script>
+    // Render the roadmap from the shared TOPICS registry.
+    (function () {
+      const mount = document.getElementById("roadmap");
+      if (!mount || typeof TOPICS === "undefined") return;
+      mount.innerHTML = TOPICS.map((t) => `
+        <div class="roadmap-item">
+          <span class="roadmap-dot"></span>
+          <a class="roadmap-card" href="topics/${t.file}">
+            <span class="roadmap-year">${t.year} · ${t.era}</span>
+            <div class="roadmap-title">${t.title}</div>
+            <p class="roadmap-summary">${t.summary}</p>
+          </a>
+        </div>
+      `).join("");
+    })();
+  </script>
+</body>
+</html>

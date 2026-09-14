@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descobrimento do Brasil — História do Brasil</title>
+  <meta name="description" content="A chegada dos portugueses em 1500 e os efeitos colaterais da colonização." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="descobrimento">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1500 · Brasil Colônia</span>
+        <h1 class="page-title">Descobrimento do Brasil</h1>
+        <p class="page-subtitle">
+          A chegada da esquadra portuguesa e o início da colonização — e os efeitos
+          colaterais que marcaram o país por séculos.
+        </p>
+
+        <h2 class="section-title">O que aconteceu</h2>
+        <p>
+          Em <strong>22 de abril de 1500</strong>, a esquadra comandada por
+          <strong>Pedro Álvares Cabral</strong>, com cerca de 13 navios e 1.200 homens,
+          chegou à costa brasileira, na região da atual Bahia (litoral de Porto Seguro).
+          O objetivo declarado da viagem era alcançar as Índias; a parada no Brasil é
+          explicada por historiadores como uma desvio intencional ou uma correção de rota.
+        </p>
+        <p>
+          A primeira troca registrada com os povos originários ocorreu dias depois, e a
+          expedição enviou uma carta (a <em>Pérola da Coroa Portuguesa</em>) ao rei
+          D. Manuel, descrevendo a terra, os rios e os nativos. Nos anos seguintes, o
+          interesse português se voltou para o <strong>pau-brasil</strong>, madeira
+          valiosa que deu nome ao país.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["1498 — Vasco da Gama chega às Índias"] --> B["1500 — Esquadra de Cabral parte de Lisboa"]
+    B --> C["22/04/1500 — Chegada ao litoral da Bahia"]
+    C --> D["Contato com povos originários"]
+    D --> E["Exploração do pau-brasil"]
+    E --> F["Feitorias e colonização"]
+    F --> G["Capitanias Hereditárias (1534)"]
+        </div>
+
+        <h2 class="section-title">Efeitos colaterais</h2>
+        <p>
+          O "descobrimento" teve consequências profundas e duradouras para os povos que
+          já viviam no território:
+        </p>
+        <ul class="content-list">
+          <li><strong>Contato forçado com doenças</strong> — varíola, sarampo e outras
+            enfermidades a que os nativos não tinham imunidade causaram mortes em massa
+            (algumas estimativas falam em redução drástica da população indígena).</li>
+          <li><strong>Perda de território e autonomia</strong> — a ocupação portuguesa
+            avançou sobre terras indígenas, reorganizando e deslocando povos inteiros.</li>
+          <li><strong>Início da exploração de mão de obra</strong> — primeiro o
+            <em>escambo</em> com indígenas, depois a importação de africanos escravizados,
+            estruturando a economia colonial.</li>
+          <li><strong>Imposição cultural e religiosa</strong> — a catequese e a língua
+            portuguesa reconfiguraram a sociedade ao longo dos séculos.</li>
+        </ul>
+
+        <div class="callout warn">
+          <strong>Termo em debate</strong>
+          Muitos historiadores e povos indígenas preferem o termo <em>"chegada dos
+          portugueses"</em> ou <em>"invasão"</em>, pois o "descobrimento" parte da
+          perspectiva europeia e ignora que o território já era habitado por milhões de
+          pessoas.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Data: 22 de abril de 1500.</li>
+            <li>Comandante: Pedro Álvares Cabral.</li>
+            <li>Recurso inicial: pau-brasil.</li>
+            <li>Consequência central: início da colonização e do contato forçado com os povos originários.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

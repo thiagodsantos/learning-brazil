@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensalão — História do Brasil</title>
+  <meta name="description" content="Quando e por que ocorreu o Mensalão, apoiadores e como acabou." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="mensalao">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">2005 · Século XXI</span>
+        <h1 class="page-title">Mensalão</h1>
+        <p class="page-subtitle">
+          Quando e por que ocorreu, quem apoiou, os envolvidos e como o escândalo acabou.
+        </p>
+
+        <h2 class="section-title">Quando e por que ocorreu</h2>
+        <p>
+          O <strong>Mensalão</strong> foi um esquema de <strong>corrupção e
+          compra de votos</strong> revelado em <strong>2005</strong>, durante o
+          primeiro governo de <strong>Lula</strong>. A base aliada do governo no
+          Congresso recebia pagamentos mensais (o "mensalão") para garantir apoio
+          legislativo.
+        </p>
+        <p>
+          O esquema foi exposto após a delação de um dos envolvidos e a divulgação de
+          gravações. O objetivo era comprar o apoio de parlamentares de partidos
+          menores para sustentar o governo no Congresso.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["2005 — Escândalo revelado"] --> B["Esquema de pagamento a parlamentares"]
+    B --> C["Investigação e CPI"]
+    C --> D["2012–2013 — Julgamento no STF"]
+    D --> E["Condenações (RE 470)"]
+    E --> F["Repercussão política e jurídica"]
+        </div>
+
+        <h2 class="section-title">Quem apoiou / envolveu</h2>
+        <ul class="content-list">
+          <li><strong>Base aliada do governo</strong> — parlamentares de partidos
+            menores que recebiam os pagamentos.</li>
+          <li><strong>Dois partidos envolvidos</strong> — PT e PP (então PFL/PP) foram
+            citados no esquema.</li>
+          <li><strong>Empresas e doadores</strong> — recursos desviados de empresas e
+            de doações de campanha.</li>
+        </ul>
+
+        <h2 class="section-title">Políticos, pessoas e empresas envolvidas</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Ator</th><th>Papel</th></tr></thead>
+            <tbody>
+              <tr><td>José Dirceu</td><td>Ex-chefe da Casa Civil, condenado</td></tr>
+              <tr><td>Delúbio Soares</td><td>Ex-tesoureiro do PT, condenado</td></tr>
+              <tr><td>Marco Valério</td><td>Publicitário, operador do esquema</td></tr>
+              <tr><td>Parlamentares de partidos aliados</td><td>Recebedores do "mensalão"</td></tr>
+              <tr><td>STF (RE 470)</td><td>Tribunal que julgou o caso</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Quando e como acabou</h2>
+        <p>
+          O caso foi julgado pelo <strong>Supremo Tribunal Federal (STF)</strong> entre
+          <strong>2012 e 2013</strong> (Recurso Extraordinário 470). Vários
+          envolvidos foram <strong>condenados</strong> a penas de prisão e
+          inelegibilidade. O escândalo abalou o governo e contribuiu para o
+          fortalecimento do debate sobre corrupção no Brasil.
+        </p>
+
+        <div class="callout warn">
+          <strong>Impacto</strong>
+          O Mensalão foi um dos primeiros grandes escândalos de corrupção do século
+          XXI no Brasil e abriu caminho para investigações posteriores, como a
+          Operação Lava Jato.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Revelado em 2005, no 1º governo Lula.</li>
+            <li>Esquema de compra de votos da base aliada.</li>
+            <li>Envolvia PT e PP, além de empresas.</li>
+            <li>Julgado pelo STF (RE 470), com condenações.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

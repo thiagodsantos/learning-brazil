@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escravidão no Brasil — História do Brasil</title>
+  <meta name="description" content="Como começou a escravidão no Brasil, quem apoiou e os envolvidos." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="escravidao">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1500–1888 · Brasil Colônia</span>
+        <h1 class="page-title">Escravidão no Brasil</h1>
+        <p class="page-subtitle">
+          Como começou, quem apoiou e os políticos, pessoas e empresas envolvidos no
+          maior tráfico de seres humanos da história.
+        </p>
+
+        <h2 class="section-title">Como começou</h2>
+        <p>
+          A escravidão no Brasil começou com a <strong>escravidão indígena</strong>,
+          usada desde os primeiros anos de colonização para o trabalho no extrativismo
+          (pau-brasil) e, depois, na agricultura. Com a expansão da
+          <strong>cana-de-açúcar</strong> no século XVI, a demanda por mão de obra
+          explodiu e o Brasil se tornou o principal destino do
+          <strong>tráfico atlântico de africanos escravizados</strong>.
+        </p>
+        <p>
+          Estima-se que cerca de <strong>4,9 milhões de africanos</strong> foram
+          trazidos à força ao Brasil — o maior número de todos os destinos das Américas.
+          A mão de obra escravizada sustentou o açúcar, o ouro, o café e a economia
+          doméstica por quase quatro séculos.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["Séc. XVI — Escravidão indígena"] --> B["Expansão da cana-de-açúcar"]
+    B --> C["Tráfico atlântico de africanos"]
+    C --> D["Séc. XVII–XVIII — Ouro e mineração"]
+    D --> E["Séc. XIX — Café no Sudeste"]
+    E --> F["1850 — Lei Eusébio de Queirós (fim do tráfico)"]
+    F --> G["1871 — Lei do Ventre Livre"]
+    G --> H["1885 — Lei dos Sexagenários"]
+    H --> I["13/05/1888 — Lei Áurea (abolição)"]
+        </div>
+
+        <h2 class="section-title">Quem apoiou</h2>
+        <p>
+          A escravidão foi sustentada por uma estrutura econômica e política ampla:
+        </p>
+        <ul class="content-list">
+          <li><strong>Coroa portuguesa</strong> — concedeu cartas de doação, capitanias e
+            incentivou o tráfico como fonte de riqueza e impostos.</li>
+          <li><strong>Senhores de engenho e fazendeiros</strong> — a elite agrária que
+            lucrou com a produção de açúcar, ouro e café.</li>
+          <li><strong>Comerciantes e armadores</strong> — empresas e famílias envolvidas
+            no transporte de africanos (o chamado "comércio de gente").</li>
+          <li><strong>Clero, em parte</strong> — embora houvesse vozes contrárias, a
+            Igreja também se beneficiou e, por vezes, legitimou a instituição.</li>
+        </ul>
+
+        <h2 class="section-title">Políticos, pessoas e empresas envolvidas</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Ator</th><th>Papel</th></tr></thead>
+            <tbody>
+              <tr><td>Coroa Portuguesa</td><td>Concedeu terras e incentivou o tráfico</td></tr>
+              <tr><td>Senhores de engenho</td><td>Proprietários que usavam mão de obra escravizada no açúcar</td></tr>
+              <tr><td>Armadores e comerciantes</td><td>Financiaram e operaram o transporte de africanos</td></tr>
+              <tr><td>Elites cafeeiras (Séc. XIX)</td><td>Mantiveram a escravidão até a abolição</td></tr>
+              <tr><td>Princesa Isabel</td><td>Assinou a Lei Áurea em 1888 (como regente)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <strong>Abolição tardia</strong>
+          O Brasil foi o <strong>último país das Américas</strong> a abolir a escravidão,
+          em 13 de maio de 1888, pela <strong>Lei Áurea</strong>. A abolição não veio
+          acompanhada de políticas de integração, terra ou educação para os libertos,
+          o que ajudou a consolidar desigualdades que persistem até hoje.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Começou com a escravidão indígena e se expandiu com o tráfico de africanos.</li>
+            <li>~4,9 milhões de africanos trazidos à força — o maior destino das Américas.</li>
+            <li>Sustentada por Coroa, elite agrária, comerciantes e armadores.</li>
+            <li>Abolida em 1888 (Lei Áurea), sem políticas de reparação ou integração.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

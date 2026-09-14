@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Independência do Brasil — História do Brasil</title>
+  <meta name="description" content="O que aconteceu na Independência de 1822 e quais foram os efeitos colaterais." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="independencia">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1822 · Império</span>
+        <h1 class="page-title">Independência do Brasil</h1>
+        <p class="page-subtitle">
+          O que aconteceu em 1822 e quais foram os efeitos colaterais da separação de Portugal.
+        </p>
+
+        <h2 class="section-title">O que aconteceu</h2>
+        <p>
+          Em <strong>7 de setembro de 1822</strong>, às margens do riacho Ipiranga,
+          <strong>D. Pedro</strong> declarou a separação de Portugal — o episódio
+          conhecido como o <strong>Grito do Ipiranga</strong>. O Brasil deixou de ser
+          colônia e passou a ser um <strong>Império</strong>, com D. Pedro I como
+          primeiro imperador.
+        </p>
+        <p>
+          O contexto: em 1808, a família real portuguesa fugiu de Napoleão e transferiu
+          a corte para o Rio de Janeiro. Em 1815, o Brasil foi elevado a
+          <em>Reino Unido a Portugal e Algarves</em>. Quando a pressão liberal em
+          Portugal exigiu o retorno da corte (1820) e a recolonização, D. Pedro
+          rompeu com Lisboa para manter o poder e a autonomia.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["1808 — Corte portuguesa no Rio"] --> B["1815 — Brasil vira Reino Unido"]
+    B --> C["1820 — Revolução Liberal do Porto"]
+    C --> D["Pressão por recolonização"]
+    D --> E["07/09/1822 — Grito do Ipiranga"]
+    E --> F["1823 — Guerra da Independência"]
+    F --> G["1825 — Reconhecimento por Portugal"]
+        </div>
+
+        <h2 class="section-title">Efeitos colaterais</h2>
+        <ul class="content-list">
+          <li><strong>Independência "de cima"</strong> — liderada pela elite, manteve a
+            escravidão e a concentração de terras; a maioria da população não ganhou
+            direitos políticos.</li>
+          <li><strong>Guerra da Independência (1822–1823)</strong> — conflitos armados,
+            especialmente na Bahia, para consolidar a ruptura.</li>
+          <li><strong>Centralização no Imperador</strong> — o "poder moderador" dava a
+            D. Pedro o controle sobre os outros poderes, limitando a democracia.</li>
+          <li><strong>Permanência da escravidão</strong> — a independência não aboliu a
+            escravidão, que só terminaria em 1888.</li>
+        </ul>
+
+        <div class="callout info">
+          <strong>Curiosidade</strong>
+          A independência foi relativamente "pacífica" em comparação a outras colônias
+          americanas, em grande parte porque a elite brasileira preferiu manter a
+          monarquia e a ordem social do que promover uma revolução social.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Data: 7 de setembro de 1822.</li>
+            <li>Proclamada por D. Pedro, que virou D. Pedro I.</li>
+            <li>O Brasil tornou-se um Império, não uma república.</li>
+            <li>Manteve escravidão e concentração de poder na elite.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

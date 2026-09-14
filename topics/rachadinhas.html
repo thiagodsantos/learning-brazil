@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachadinhas — História do Brasil</title>
+  <meta name="description" content="Quando e por que ocorreu o esquema das rachadinhas, apoiadores e como acabou." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="rachadinhas">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">2017– · Século XXI</span>
+        <h1 class="page-title">Rachadinhas</h1>
+        <p class="page-subtitle">
+          Quando e por que ocorreu o esquema das "rachadinhas", quem apoiou e como
+          acabou.
+        </p>
+
+        <h2 class="section-title">O que são e quando ocorreu</h2>
+        <p>
+          As <strong>"rachadinhas"</strong> são um esquema de <strong>desvio de
+          salários</strong> de servidores: o parlamentar ou gestor público nomeia
+          assessores, que devolvem parte (às vezes a maior parte) do próprio salário ao
+          chefe. O dinheiro desviado é usado para fins pessoais ou políticos.
+        </p>
+        <p>
+          O termo ganhou destaque nacional em <strong>2017</strong>, com a
+          investigação do então deputado federal <strong>Rodrigo Maia</strong> (RJ),
+          mas o esquema é antigo e foi revelado em vários estados e municípios ao
+          longo dos anos.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["Parlamentar nomeia assessores"] --> B["Assessores devolvem parte do salário"]
+    B --> C["Dinheiro desviado para uso pessoal/político"]
+    C --> D["Investigação e delações"]
+    D --> E["Condenações e perdas de mandato"]
+        </div>
+
+        <h2 class="section-title">Quem apoiou / envolveu</h2>
+        <ul class="content-list">
+          <li><strong>Parlamentares e gestores</strong> — que nomeavam os assessores e
+            recebiam o dinheiro de volta.</li>
+          <li><strong>Assessores "fichas"</strong> — servidores que não trabalhavam e
+            devolviam o salário.</li>
+          <li><strong>Redes de apoio político</strong> — que mantinham o esquema
+            silencioso.</li>
+        </ul>
+
+        <h2 class="section-title">Políticos, pessoas e empresas envolvidas</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Ator</th><th>Papel</th></tr></thead>
+            <tbody>
+              <tr><td>Parlamentares estaduais e municipais</td><td>Nomeavam assessores e recebiam o dinheiro</td></tr>
+              <tr><td>Assessores</td><td>Devolviam parte do salário</td></tr>
+              <tr><td>Tribunais de Contas e MP</td><td>Investigaram e condenaram</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Quando e como acabou</h2>
+        <p>
+          Não há um "fim" único: o esquema é investigado de forma contínua por
+          <strong>Ministérios Públicos</strong> e <strong>Tribunais de Contas</strong>.
+          Vários parlamentares foram <strong>condenados</strong>, perderam mandatos e
+            foram declarados <strong>inelegíveis</strong>. A exposição do caso
+            aumentou a fiscalização sobre a folha de pagamento dos gabinetes.
+        </p>
+
+        <div class="callout warn">
+          <strong>Prejuízo</strong>
+          As rachadinhas desviam recursos públicos que deveriam ser usados para
+          serviços à população, e corroem a confiança nas instituições.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Desvio de salários de assessores.</li>
+            <li>Destaque nacional em 2017 (caso Rodrigo Maia).</li>
+            <li>Esquema antigo, em vários estados e municípios.</li>
+            <li>Investigado por MP e Tribunais de Contas, com condenações.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

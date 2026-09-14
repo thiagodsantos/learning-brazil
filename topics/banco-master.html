@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco Master — História do Brasil</title>
+  <meta name="description" content="Quando e por que ocorreu o caso do Banco Master, apoiadores e como acabou." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="banco-master">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">2025 · Século XXI</span>
+        <h1 class="page-title">Banco Master</h1>
+        <p class="page-subtitle">
+          Quando e por que ocorreu o caso do Banco Master, quem apoiou, os envolvidos e
+          como a situação acabou.
+        </p>
+
+        <div class="callout info">
+          <strong>Caso recente — verifique fontes atualizadas</strong>
+          Este é um caso recente e ainda em desenvolvimento. Os detalhes específicos
+          (nomes, valores e desdobramentos) podem mudar conforme as investigações
+          avançam. Use esta página como um <em>guia do que investigar</em> e confirme
+          os fatos em fontes oficiais e de imprensa atualizadas.
+        </div>
+
+        <h2 class="section-title">O que aconteceu</h2>
+        <p>
+          O <strong>Banco Master</strong> é uma instituição financeira brasileira que
+          passou a ser alvo de atenção regulatória e de investigações por supostos
+          problemas de <strong>governança, concessão de crédito e possível lavagem de
+          dinheiro</strong>. O caso ganhou destaque quando o
+          <strong>Banco Central do Brasil (BC)</strong> intensificou a fiscalização e,
+          em <strong>2025</strong>, moveu-se para a <strong>liquidação</strong> da
+          instituição, retirando sua autorização para funcionar.
+        </p>
+        <p>
+          A liquidação de um banco pelo BC ocorre quando o regulador identifica falhas
+          graves na gestão de riscos e na solidez da instituição, o que pode colocar em
+          risco os depositantes. Nesses casos, o <strong>Fundo Garantidor de Créditos
+          (FGC)</strong> entra para resgatar os depósitos dentro dos limites legais.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["Banco Master"] --> B["Fiscalização do Banco Central"]
+    B --> C["Supostas falhas de governança e crédito"]
+    C --> D["2025 — Liquidação pelo BC"]
+    D --> E["Depósitos resgatados via FGC"]
+    E --> F["Investigações em andamento"]
+        </div>
+
+        <h2 class="section-title">Quem apoiou / envolveu</h2>
+        <ul class="content-list">
+          <li><strong>Controladores e executivos do banco</strong> — responsáveis pela
+            gestão e pela concessão de créditos.</li>
+          <li><strong>Tomadores de crédito</strong> — beneficiários dos empréstimos
+            questionados.</li>
+          <li><strong>Clientes e depositantes</strong> — afetados pela liquidação.</li>
+        </ul>
+
+        <h2 class="section-title">Instituições envolvidas</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Ator</th><th>Papel</th></tr></thead>
+            <tbody>
+              <tr><td>Banco Central do Brasil</td><td>Regulador que fiscalizou e liquidou o banco</td></tr>
+              <tr><td>FGC (Fundo Garantidor de Créditos)</td><td>Garante depósitos dos clientes</td></tr>
+              <tr><td>Ministério Público / Polícia Federal</td><td>Investigações criminais</td></tr>
+              <tr><td>Controladores e executivos</td><td>Alvos das investigações</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Quando e como acabou</h2>
+        <p>
+          O banco foi <strong>liquidado em 2025</strong> pelo Banco Central. Os
+          depósitos de clientes são resgatados pelo <strong>Fundo Garantidor de
+          Créditos (FGC)</strong>, dentro dos limites legais. As investigações
+          criminais sobre a gestão e os créditos concedidos seguem em andamento —
+          consulte fontes atualizadas para os desdobramentos mais recentes.
+        </p>
+
+        <div class="callout warn">
+          <strong>Por que importa</strong>
+          O caso levanta questões sobre a <strong>fiscalização do sistema
+          financeiro</strong>, a proteção dos depositantes e os riscos de bancos
+          controlados por poucos grupos com concessão de crédito pouco transparente.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Instituição financeira alvo de fiscalização do BC.</li>
+            <li>Supostas falhas de governança e na concessão de crédito.</li>
+            <li>Liquidado pelo Banco Central em 2025.</li>
+            <li>Depósitos resgatados via FGC; investigações seguem.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

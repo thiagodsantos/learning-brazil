@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Referências — História do Brasil</title>
+  <meta name="description" content="Livros, cursos, vídeos, artigos e documentação organizados por tópico." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-topic="">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">Bibliografia e fontes</span>
+        <h1 class="page-title">Referências</h1>
+        <p class="page-subtitle">
+          Livros, cursos, vídeos, artigos e documentação organizados por tópico para
+          aprofundar o estudo. As fontes são indicativas — verifique sempre a edição e a
+          disponibilidade atual de cada material.
+        </p>
+
+        <div class="callout info">
+          <strong>Nota sobre as fontes</strong>
+          Esta é uma lista de estudo. Priorize obras de historiadores e instituições
+          reconhecidas (universidades, museus, arquivos públicos) para aprofundamento.
+        </div>
+
+        <div id="refs-list"></div>
+
+        <footer class="page-footer">
+          <p><a href="index.html">← Voltar ao roteiro</a></p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/topics.js"></script>
+  <script>
+    const REFS = {
+      "descobrimento": [
+        { type: "Livro", title: "1492–1532: A formação do Brasil colonial", author: "Diversos (org. da USP)" },
+        { type: "Artigo", title: "A chegada de Cabral e o contexto das Grandes Navegações", source: "Enciclopédia Brasiliana" },
+        { type: "Vídeo", title: "Documentários sobre a colonização do Brasil", source: "Canais educativos / TV Brasil" }
+      ],
+      "escravidao": [
+        { type: "Livro", title: "Escravidão e Liberdade no Brasil Meridional", author: "João José Reis" },
+        { type: "Livro", title: "O Cativeiro Brasileiro", author: "Sérgio Buarque de Holanda" },
+        { type: "Instituição", title: "Museu da Abolição / Arquivo Nacional", source: "Fontes primárias" }
+      ],
+      "independencia": [
+        { type: "Livro", title: "O Império do Brasil", author: "Vários historiadores" },
+        { type: "Artigo", title: "O Grito do Ipiranga e a independência", source: "Enciclopédia Brasiliana" },
+        { type: "Vídeo", title: "Documentário sobre o Primeiro Reinado", source: "TV Brasil" }
+      ],
+      "republica": [
+        { type: "Livro", title: "A República Velha", author: "Vários historiadores" },
+        { type: "Artigo", title: "O 15 de Novembro de 1889", source: "Enciclopédia Brasiliana" }
+      ],
+      "clt": [
+        { type: "Documentação", title: "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)", source: "Planalto — Presidência" },
+        { type: "Artigo", title: "A CLT e o Estado trabalhista varguista", source: "Revistas jurídicas" }
+      ],
+      "ditadura": [
+        { type: "Livro", title: "A Ditadura Escravizadora", author: "Vários historiadores" },
+        { type: "Instituição", title: "Comissão Nacional da Verdade (relatório)", source: "Governo Federal" },
+        { type: "Vídeo", title: "Documentários sobre o período militar", source: "TV Brasil / canais educativos" }
+      ],
+      "diretas-ja": [
+        { type: "Vídeo", title: "Cobertura histórica do movimento Diretas Já", source: "Arquivos de TV" },
+        { type: "Artigo", title: "A emenda Dante de Oliveira", source: "Enciclopédia Brasiliana" }
+      ],
+      "constituicao-1988": [
+        { type: "Documentação", title: "Constituição da República Federativa do Brasil de 1988", source: "Planalto — Presidência" },
+        { type: "Livro", title: "Direito Constitucional", author: "Diversos autores" }
+      ],
+      "plano-collor": [
+        { type: "Artigo", title: "O Plano Collor e o confisco", source: "Revistas econômicas" },
+        { type: "Vídeo", title: "Documentário sobre a economia dos anos 90", source: "Canais educativos" }
+      ],
+      "moedas-plano-real": [
+        { type: "Documentação", title: "Plano Real (Lei 9.069/1995)", source: "Banco Central do Brasil" },
+        { type: "Artigo", title: "A hiperinflação brasileira e a estabilização", source: "Banco Central / FGV" }
+      ],
+      "privatizacoes": [
+        { type: "Documentação", title: "Agência Brasileira de Participações (BRParticipações)", source: "Governo Federal" },
+        { type: "Artigo", title: "As privatizações dos anos 90", source: "Revistas econômicas" }
+      ],
+      "mensalao": [
+        { type: "Artigo", title: "O escândalo do Mensalão", source: "Imprensa / tribunais" },
+        { type: "Documentação", title: "Acórdãos do STF (RE 470)", source: "STF" }
+      ],
+      "corrupcao": [
+        { type: "Artigo", title: "Operações da Lava Jato", source: "Justiça Federal / imprensa" },
+        { type: "Documentação", title: "Sentenças e acórdãos", source: "Tribunais" }
+      ],
+      "rachadinhas": [
+        { type: "Artigo", title: "O esquema das rachadinhas", source: "Imprensa / tribunais" },
+        { type: "Documentação", title: "Processos judiciais", source: "Tribunais" }
+      ],
+      "organizacoes-criminosas": [
+        { type: "Livro", title: "O PCC e as milícias no Brasil", author: "Vários autores" },
+        { type: "Artigo", title: "Economia criminosa e milícias", source: "Pesquisas acadêmicas" }
+      ],
+      "banco-master": [
+        { type: "Artigo", title: "A liquidação do Banco Master", source: "Imprensa / Banco Central" },
+        { type: "Documentação", title: "Comunicados do Banco Central", source: "Banco Central do Brasil" }
+      ],
+      "polemicas": [
+        { type: "Artigo", title: "Principais polêmicas da gestão pública", source: "Imprensa" }
+      ],
+      "politicos": [
+        { type: "Documentação", title: "Estrutura do Estado brasileiro", source: "Planalto — Presidência" },
+        { type: "Artigo", title: "Divisão de competências (CF/88, arts. 18–21)", source: "Constituição" }
+      ],
+      "tres-poderes": [
+        { type: "Documentação", title: "Constituição — Dos Poderes da União", source: "Planalto — Presidência" },
+        { type: "Artigo", title: "Separação dos poderes no Brasil", source: "Revistas jurídicas" }
+      ],
+      "impostos": [
+        { type: "Documentação", title: "Sistema Tributário Nacional (CF/88, arts. 145–169)", source: "Planalto — Presidência" },
+        { type: "Artigo", title: "Guia de impostos no Brasil", source: "Receita Federal" }
+      ],
+      "posicoes-politicas": [
+        { type: "Artigo", title: "O espectro político brasileiro", source: "Ciência política" },
+        { type: "Livro", title: "Introdução à Ciência Política", author: "Vários autores" }
+      ]
+    };
+
+    (function () {
+      const mount = document.getElementById("refs-list");
+      if (!mount || typeof TOPICS === "undefined") return;
+      mount.innerHTML = TOPICS.map((t) => {
+        const refs = REFS[t.id] || [];
+        const rows = refs
+          .map(
+            (r) => `
+            <tr>
+              <td style="white-space:nowrap;font-weight:600;">${r.type}</td>
+              <td>${r.title}${r.author ? ` — <em>${r.author}</em>` : ""}</td>
+              <td>${r.source || ""}</td>
+            </tr>`
+          )
+          .join("");
+        return `
+          <h2 class="section-title" style="scroll-margin-top:1rem;">
+            <a href="topics/${t.file}" style="color:inherit;text-decoration:none;">${t.title}</a>
+          </h2>
+          <div class="table-wrap">
+            <table class="data">
+              <thead><tr><th>Tipo</th><th>Material</th><th>Fonte</th></tr></thead>
+              <tbody>${rows}</tbody>
+            </table>
+          </div>`;
+      }).join("");
+    })();
+  </script>
+</body>
+</html>

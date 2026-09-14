@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movimento Diretas Já — História do Brasil</title>
+  <meta name="description" content="Quando e por que ocorreu o Diretas Já, quem apoiou e como acabou." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="diretas-ja">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1984 · Redemocratização</span>
+        <h1 class="page-title">Movimento Diretas Já</h1>
+        <p class="page-subtitle">
+          Quando e por que ocorreu, quem apoiou e como o movimento terminou.
+        </p>
+
+        <h2 class="section-title">Quando e por que ocorreu</h2>
+        <p>
+          O <strong>Diretas Já</strong> foi um movimento popular de
+          <strong>1984</strong> que pedia a volta das <strong>eleições diretas para
+          presidente da República</strong>, encerrando a escolha indireta pelo
+          Colégio Eleitoral. O gatilho foi a <strong>Emenda Dante de Oliveira</strong>,
+          apresentada pelo senador Dante de Oliveira (PMDB), que propunha eleições
+          diretas.
+        </p>
+        <p>
+          O contexto: o regime militar entrava em crise, a economia estagnava e a
+          sociedade exigia democracia. O movimento ganhou força com comícios, a
+          participação de artistas e a cobertura da TV.
+        </p>
+
+        <div class="mermaid">
+flowchart TD
+    A["1984 — Crise do regime militar"] --> B["Emenda Dante de Oliveira"]
+    B --> C["Comícios e mobilização popular"]
+    C --> D["Votação no Congresso (25/04/1984)"]
+    D --> E["Emenda rejeitada (a favor: 298, contra: 269)"]
+    E --> F["Eleição indireta pelo Colégio Eleitoral"]
+    F --> G["1985 — Tancredo Neves eleito, Sarney empossado"]
+        </div>
+
+        <h2 class="section-title">Quem apoiou</h2>
+        <ul class="content-list">
+          <li><strong>PMDB</strong> — principal partido opositor, liderou a emenda.</li>
+          <li><strong>Sociedade civil</strong> — estudantes, sindicatos, igrejas e
+            artistas (como a canção <em>"Diretas Já"</em> de Gilberto Gil e
+            Milton Nascimento).</li>
+          <li><strong>Imprensa</strong> — a cobertura televisiva amplificou o movimento.</li>
+        </ul>
+
+        <h2 class="section-title">Quando e como acabou</h2>
+        <p>
+          Em <strong>25 de abril de 1984</strong>, o Congresso
+          <strong>rejeitou</strong> a emenda (298 votos a favor, 269 contra — faltaram
+          3 votos para a maioria de 2/3). O movimento, porém, não "perdeu": a
+          mobilização pressionou os militares a acelerarem a transição, levando à
+          <strong>eleição indireta</strong> de Tancredo Neves em janeiro de 1985 e à
+          posse de <strong>José Sarney</strong>, encerrando o regime militar.
+        </p>
+
+        <div class="callout">
+          <strong>Legado</strong>
+          Embora a emenda tenha sido rejeitada, o Diretas Já é considerado um marco da
+          <strong>redemocratização</strong>: mostrou a força da sociedade civil e
+          preparou o terreno para as eleições diretas de 1989.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Ano: 1984.</li>
+            <li>Pedia eleições diretas para presidente.</li>
+            <li>Emenda Dante de Oliveira foi rejeitada no Congresso.</li>
+            <li>Levou à transição e à posse de Sarney em 1985.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>

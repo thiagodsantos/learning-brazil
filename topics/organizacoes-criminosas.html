@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organizações criminosas — História do Brasil</title>
+  <meta name="description" content="Milícias, PCC, CV e os políticos, pessoas e empresas envolvidos." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-topic="organizacoes-criminosas">
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <div class="layout">
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+      <div class="content-inner">
+        <span class="eyebrow">1990s– · Século XXI</span>
+        <h1 class="page-title">Organizações criminosas</h1>
+        <p class="page-subtitle">
+          Milícias, comandos (PCC, CV e outros) e os políticos, pessoas e empresas
+          envolvidos.
+        </p>
+
+        <h2 class="section-title">Milícias</h2>
+        <p>
+          As <strong>milícias</strong> são grupos armados, muitas vezes formados por
+          policiais e ex-militares, que "controlam" territórios (especialmente no
+          <strong>Rio de Janeiro</strong>) oferecendo segurança, transporte e serviços
+          em troca de dinheiro. Elas cobram "pedágios" de moradores e empresas e
+          atuam em atividades ilegais como o tráfico e a usura.
+        </p>
+
+        <h2 class="section-title">Comandos (PCC, CV e outros)</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Organização</th><th>Origem</th><th>Atuação</th></tr></thead>
+            <tbody>
+              <tr><td>PCC (Primeiro Comando da República)</td><td>São Paulo, 1993</td><td>Tráfico, controle de presídios, extorsão</td></tr>
+              <tr><td>CV (Comando Vermelho)</td><td>Rio de Janeiro, 1970s</td><td>Tráfico de drogas em favelas</td></tr>
+              <tr><td>TC (Terceiro Comando)</td><td>Rio de Janeiro</td><td>Tráfico, rival do CV</td></tr>
+              <tr><td>FAC (Família do PCC)</td><td>Expansão do PCC</td><td>Expansão nacional e internacional</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mermaid">
+flowchart TD
+    A["1993 — PCC fundado em SP"] --> B["Expansão para outros estados"]
+    B --> C["CV e TC no Rio"]
+    C --> D["Milícias no Rio (polícia + território)"]
+    D --> E["Economia criminosa: tráfico, extorsão, usura"]
+    E --> F["Infiltração na política e no poder público"]
+        </div>
+
+        <h2 class="section-title">Políticos, pessoas e empresas envolvidas</h2>
+        <ul class="content-list">
+          <li><strong>Políticos e vereadores</strong> — alguns foram investigados por
+            vínculos com milícias e facções (casos no Rio e em outros estados).</li>
+          <li><strong>Policiais e militares</strong> — parte das milícias é formada por
+            agentes de segurança.</li>
+          <li><strong>Empresas de fachada</strong> — usadas para lavar dinheiro do
+            tráfico e da extorsão.</li>
+          <li><strong>Lavagem de dinheiro</strong> — via imóveis, empresas de
+            transporte, jogos e até doações de campanha.</li>
+        </ul>
+
+        <div class="callout warn">
+          <strong>Economia criminosa</strong>
+          As organizações criminosas formam uma <strong>economia paralela</strong>
+          bilionária, que financia violência, corrói o Estado e, em alguns casos,
+          influencia eleições locais.
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Pontos-chave para lembrar</h3>
+          <ul class="content-list" style="margin-bottom:0;">
+            <li>Milícias: grupos armados que controlam territórios (RJ).</li>
+            <li>PCC (SP, 1993) e CV (RJ) são as principais facções.</li>
+            <li>Atuam em tráfico, extorsão e usura.</li>
+            <li>Infiltram-se na política e lavam dinheiro via empresas.</li>
+          </ul>
+        </div>
+
+        <div id="prevnext-mount"></div>
+
+        <footer class="page-footer">
+          <p>
+            <a href="../index.html">← Roteiro</a> ·
+            <a href="../references.html">Referências deste tópico</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "default" });
+  </script>
+  <script src="../js/topics.js"></script>
+</body>
+</html>
