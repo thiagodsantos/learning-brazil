@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regularização do Trabalho e a CLT (1943) — História do Brasil</title>
+  <meta name="description" content="A criação da Consolidação das Leis do Trabalho (CLT) em 1943 no governo Getúlio Vargas: direitos sociais, corporativismo estatal e deveres laborais.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-amber-400">Era Vargas</span>
+        <span>/</span>
+        <span class="text-slate-200">CLT e Leis Trabalhistas</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Regularização do Trabalho e a CLT (1943)
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        A transição da "questão social como caso de polícia" para a institucionalização estatal dos direitos trabalhistas durante o Estado Novo de Getúlio Vargas.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>A Arquitetura Trabalhista e o Corporativismo Varguista</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[República Velha: Greves Anarcossindicais de 1917 & Repressão Policial] --> B[Revolução de 1930: Criação do Ministério do Trabalho - Lindolfo Collor]
+    B --> C[Estado Novo 1937: Constituição Polaca inspirada na Carta del Lavoro italiana]
+    C --> D[01 de Maio de 1943: Decreto-Lei 5.452 - Consolidação das Leis do Trabalho - CLT]
+    
+    subgraph Direitos Conquistados
+      D --> E1[Salário Mínimo Fixado]
+      D --> E2[Jornada de 8h diárias / 44h semanais]
+      D --> E3[Férias Remuneradas & Descanso Semanal]
+      D --> E4[Carteira de Trabalho e Previdência Social - CTPS]
+      D --> E5[Criação da Justiça do Trabalho]
+    end
+
+    subgraph Controle Estatal
+      D --> F1[Imposto Sindical Obrigatório]
+      D --> F2[Unicidade Sindical e Vinculação ao Ministério do Trabalho]
+      D --> F3[Exclusão Histórica dos Trabalhadores Rurais e Domésticas]
+    end
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. Quando e Porque Ocorreu</h2>
+          <p class="mb-3">
+            Na República Velha, a célebre máxima atribuída ao presidente Washington Luís de que "a questão social é um caso de polícia" ilustrava a postura estatal de reprimir greves operárias com violência e deportação de militantes anarquistas e comunistas.
+          </p>
+          <p class="mb-3">
+            Com a <strong>Revolução de 1930</strong>, Getúlio Vargas percebeu a necessidade de canalizar a insatisfação do proletariado urbano para sustentar a industrialização por substituição de importações. Em <strong>1º de maio de 1943</strong>, durante solenidade no Estádio de São Januário, Vargas assinou o Decreto-Lei nº 5.452, unificando a dispersa legislação em vigor na <strong>Consolidação das Leis do Trabalho (CLT)</strong>.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. Quem Apoiou e os Objetivos Políticos</h2>
+          <p class="mb-3">
+            A CLT foi redigida por juristas de renome como <strong>Arnaldo Süssekind, Oscar Saraiva e Segadas Vianna</strong>, sob encomenda do ministro do Trabalho Alexandre Marcondes Filho.
+          </p>
+          <p>
+            O regime do Estado Novo buscou afastar a influência comunista (representada pelo PCB) e submeter o sindicalismo à tutela do Estado (modelo copiado da <em>Carta del Lavoro</em> da Itália fascista). Os sindicatos recebiam monopólio de representação por base territorial (unicidade sindical) e financiamento via imposto sindical, mas eram proibidos de fazer greves sem autorização da recém-criada Justiça do Trabalho.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. Direitos e Deveres Centrais da CLT</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+            <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+              <h3 class="font-bold text-emerald-400 mb-2">Principais Direitos Assegurados</h3>
+              <ul class="list-disc list-inside space-y-1.5 text-slate-300">
+                <li>Carteira de Trabalho formalizando o vínculo de emprego;</li>
+                <li>Salário mínimo unificado por regiões geográficas;</li>
+                <li>Jornada de 8 horas e remuneração adicional por horas extras;</li>
+                <li>Férias remuneradas e descanso semanal obrigatório;</li>
+                <li>Proteção especial ao trabalho da mulher e do menor de idade;</li>
+                <li>Indenização por demissão imotivada (posteriormente substituída pelo FGTS em 1966).</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+              <h3 class="font-bold text-rose-400 mb-2">Limitações Históricas & Deveres</h3>
+              <ul class="list-disc list-inside space-y-1.5 text-slate-300">
+                <li><strong>Exclusão Rural:</strong> Trabalhadores do campo ficaram de fora da CLT até o Estatuto do Trabalhador Rural de 1963;</li>
+                <li><strong>Empregadas Domésticas:</strong> Conquistaram igualdade de direitos plena apenas em 2013 (PEC das Domésticas);</li>
+                <li><strong>Deveres:</strong> Pontualidade, assiduidade, probidade e cumprimento de normas sob risco de demissão por justa causa (art. 482).</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

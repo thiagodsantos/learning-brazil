@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proclamação da República (1889) — História do Brasil</title>
+  <meta name="description" content="O golpe civil-militar de 15 de novembro de 1889, o exílio de Dom Pedro II, a ascensão do Exército e o domínio da política do café com leite.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-emerald-400">República Velha</span>
+        <span>/</span>
+        <span class="text-slate-200">Proclamação da República</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Proclamação da República (1889)
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        A crise terminal do Segundo Reinado, a insatisfação militar após a Guerra do Paraguai, a aliança com os cafeicultores paulistas e o advento da República Oligárquica.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>A Ruptura do Império e as Forças do Golpe Republicano</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Guerra do Paraguai 1864-1870: Fortalecimento e Politização do Exército] --> D[Crise Militar & Positivismo]
+    B[Questão Religiosa 1872-1875: Ruptura da Igreja com a Coroa] --> E[Isolamento de D. Pedro II]
+    C[Lei Áurea 1888: Cafeicultores do Vale do Paraíba abandonam a Monarquia] --> F[Republicanismo Paulista: PRP]
+    
+    D & E & F --> G[15 de Novembro de 1889: Marechal Deodoro da Fonseca depõe Visconde de Ouro Preto]
+    G --> H[Proclamação da República e Banimento da Família Imperial]
+    H --> I[República da Espada: Deodoro e Floriano Peixoto]
+    I --> J[República Oligárquica: Coronelismo, Voto de Cabresto e Café com Leite]
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. O que Aconteceu</h2>
+          <p class="mb-3">
+            Na manhã de 15 de novembro de 1889, na Praça da Aclamação (atual Praça da República) no Rio de Janeiro, o <strong>Marechal Deodoro da Fonseca</strong>, à frente de contingentes do Exército, liderou o levante que destituiu o gabinete ministerial do Visconde de Ouro Preto e formalizou o fim do Império de Dom Pedro II.
+          </p>
+          <p class="mb-3">
+            A família imperial foi banida do país dois dias depois, embarcando no vapor <em>Alagoas</em> para a Europa. Foi instaurado um Governo Provisório chefiado por Deodoro da Fonseca, com intelectuais positivistas e republicanos como Benjamin Constant e Rui Barbosa.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. "O Povo Assistiu Bestializado"</h2>
+          <p class="mb-3">
+            A célebre frase do jornalista e testemunha ocular Aristides Lobo resumiu a ausência total de participação popular no episódio:
+          </p>
+          <blockquote class="p-4 my-3 border-l-4 border-amber-400 bg-slate-950/60 rounded-r-xl italic text-slate-300 text-xs sm:text-sm">
+            "O povo assistiu àquilo bestializado, atônito, surpreso, sem saber o que significava. Muitos acreditaram seriamente estar vendo uma parada militar."
+          </blockquote>
+          <p>
+            A República não nasceu de uma insurreição popular democratizante, mas de um arranjo de cúpula entre as Forças Armadas descontentes com o tratamento dado pelo parlamento imperial e as oligarquias do oeste paulista, organizadas no Partido Republicano Paulista (PRP), interessadas em autonomia fiscal estadual (federalismo).
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-rose-400">3. Efeitos Colaterais e Consequências</h2>
+          <ul class="list-disc list-inside space-y-2 text-slate-300">
+            <li><strong>Encilhamento e Crise Inflacionária:</strong> A política econômica de emissão monetária desenfreada conduzida por Rui Barbosa gerou uma bolha especulativa na Bolsa do Rio de Janeiro, falências em massa e desvalorização cambial.</li>
+            <li><strong>República Oligárquica e Coronelismo:</strong> A Constituição de 1891 aboliu o voto censitário (por renda), mas excluiu mulheres, analfabetos e soldados. Com o voto aberto (não secreto), instituiu-se o <strong>voto de cabresto</strong> controlado pelos coronéis locais.</li>
+            <li><strong>A Política dos Governadores:</strong> Arranjo concebido pelo presidente Campos Sales no qual o governo central apoiava as elites regionais em troca da eleição de bancadas submissas no Congresso, consolidando a alternância do "Café com Leite" (São Paulo e Minas Gerais).</li>
+          </ul>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

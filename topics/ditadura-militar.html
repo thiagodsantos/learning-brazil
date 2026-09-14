@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ditadura Militar no Brasil (1964 - 1985) — História do Brasil</title>
+  <meta name="description" content="O golpe de 1964, a conspiração civil-empresarial, o endurecimento do AI-5, a repressão armada, o milagre econômico e a transição pactuada com a Lei da Anistia.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-rose-400">Regime Militar</span>
+        <span>/</span>
+        <span class="text-slate-200">Ditadura Militar</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Ditadura Militar no Brasil (1964 – 1985)
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        Vinte e um anos de autoritarismo: a deposição de João Goulart, os Atos Institucionais, a censura aos meios de comunicação, o aparato de tortura e a dívida externa recorde.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>Evolução Cronológica do Regime Militar</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+timeline
+    title Linha do Tempo: 1964 - 1985
+    1964 : Golpe Civil-Militar (31 de março / 1º de abril) : Deposição de João Goulart : AI-1 cassa mandatos
+    1968 : Passeata dos 100 Mil : Edição do AI-5 por Costa e Silva : Fechamento do Congresso e censura prévia
+    1969 - 1974 : Governo Médici e os "Anos de Chumbo" : Guerrilha do Araguaia e repressão do DOI-CODI : Milagre Econômico e obras faraônicas
+    1975 - 1979 : Governo Geisel : Assassinato de Vladimir Herzog : Abertura "lenta, gradual e segura" : Revogação do AI-5
+    1979 - 1985 : Governo Figueiredo : Lei da Anistia de 1979 : Crise da Dívida e Hiperinflação : Eleição de Tancredo Neves no Colégio Eleitoral
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-rose-400">1. Quando e Porque Ocorreu</h2>
+          <p class="mb-3">
+            Em 31 de março de 1964, tropas lideradas pelo general Olímpio Mourão Filho marcharam de Juiz de Fora (MG) em direção ao Rio de Janeiro, consumando o golpe militar com o apoio do governador Magalhães Pinto e do Congresso Nacional, que declarou vaga a Presidência da República mesmo com o presidente eleito <strong>João Goulart (Jango)</strong> ainda em território nacional (no Rio Grande do Sul).
+          </p>
+          <p class="mb-3">
+            O pretexto ideológico foi a <strong>Guerra Fria</strong> e a Doutrina de Segurança Nacional formulada na Escola Superior de Guerra (ESG): frear uma suposta "ameaça comunista" após Jango apresentar o programa das <strong>Reformas de Base</strong> (reforma agrária, tributária, educacional e bancária) no Comício da Central do Brasil em março de 1964.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. Quem Apoiou: A Conspiração Civil-Empresarial e Internacional</h2>
+          <ul class="list-disc list-inside space-y-2 text-slate-300">
+            <li><strong>Governo dos Estados Unidos:</strong> Operação <em>Brother Sam</em>, organizada pelo embaixador Lincoln Gordon e pelo adido militar Vernon Walters, que mobilizou uma esquadra naval americana com porta-aviões para intervir caso houvesse resistência armada pró-Goulart.</li>
+            <li><strong>Elites Empresariais e Financeiras:</strong> O Instituto de Pesquisas e Estudos Sociais (IPÊS) e o Instituto Brasileiro de Ação Democrática (IBAD), financiados por industriais e multinacionais (como multinacionais automotivas e construtoras civis).</li>
+            <li><strong>Grande Imprensa e Igreja:</strong> Os principais veículos de comunicação da época editorializaram em favor da intervenção militar, e setores conservadores da Igreja organizaram as <em>Marchas da Família com Deus pela Liberdade</em>.</li>
+            <li><strong>Líderes Civis:</strong> Governadores como Carlos Lacerda (Guanabara), Magalhães Pinto (Minas Gerais) e Adhemar de Barros (São Paulo), que imaginavam que os militares devolveriam o poder nas eleições previstas para 1965.</li>
+          </ul>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. Anos de Chumbo e Repressão Sistemática</h2>
+          <p class="mb-3">
+            Em 13 de dezembro de 1968, o general Costa e Silva decretou o <strong>Ato Institucional nº 5 (AI-5)</strong>, o mais repressivo do período. O AI-5 fechou o Congresso, suspendeu a garantia de <em>habeas corpus</em> para crimes políticos, instituiu a censura prévia à imprensa, música e teatro, e conferiu ao presidente poder sumário de cassação.
+          </p>
+          <p class="mb-3">
+            Criou-se a estrutura clandestina de repressão através do <strong>DOI-CODI</strong> e da Operação Bandeirantes (OBAN). O Relatório da Comissão Nacional da Verdade (2014) comprovou que o Estado brasileiro foi responsável por ao menos <strong>434 mortos e desaparecidos políticos</strong>, além de milhares de cidadãos torturados nos porões da ditadura.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">4. Quando e Como Acabou</h2>
+          <p class="mb-3">
+            O regime começou a se desgastar em meados dos anos 1970 pelo fim do "Milagre Econômico" (gerado pelos choques do petróleo de 1973 e 1979 e explosão da dívida externa), protestos pelo assassinato do jornalista <strong>Vladimir Herzog (1975)</strong> e as greves operárias do ABC paulista lideradas por Lula a partir de 1978.
+          </p>
+          <p>
+            O general Ernesto Geisel iniciou o processo de abertura "lenta, gradual e segura". Em 1979, o general João Figueiredo sancionou a <strong>Lei da Anistia (Lei 6.683/1979)</strong> — que permitiu o retorno dos exilados políticos, mas também concedeu autoanistia aos agentes estatais acusados de tortura e assassinatos. O ciclo ditatorial encerrou-se formalmente em 15 de janeiro de 1985 com a vitória de <strong>Tancredo Neves</strong> no Colégio Eleitoral.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

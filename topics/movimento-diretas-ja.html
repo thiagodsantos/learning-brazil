@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movimento Diretas Já (1983 - 1984) — História do Brasil</title>
+  <meta name="description" content="A campanha cívica pelas eleições diretas para presidente: a Emenda Dante de Oliveira, comícios com milhões nas ruas e a transição via Colégio Eleitoral.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-cyan-400">Redemocratização</span>
+        <span>/</span>
+        <span class="text-slate-200">Diretas Já</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Movimento Diretas Já (1983 – 1984)
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        A maior mobilização popular da história brasileira: multidões nas praças exigindo o voto direto para a presidência da República e o fim definitivo do regime militar.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>A Marcha Cívica e o Desfecho Institucional</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Crise Econômica: Hiperinflação e FMI nos anos 1980] --> B[Março de 1983: Deputado Dante de Oliveira apresenta PEC nº 05]
+    B --> C[Novembro de 1983: Primeiro grande comício em São Paulo - Praça Charles Miller]
+    C --> D[Janeiro a Abril de 1984: Mobilizações gigantescas em BH, Rio de Janeiro e Vale do Anhangabaú]
+    D --> E[Atores: Ulysses Guimarães, Tancredo Neves, Franco Montoro, Lula, Brizola, FHC, artistas e jogadores]
+    E --> F[25 de Abril de 1984: Votação da Emenda na Câmara dos Deputados]
+    F -->|298 a favor, 65 contra, faltaram 22 votos para quórum de 2/3| G[Derrota da Emenda Dante de Oliveira]
+    G --> H[Negociação Política da Oposição: Aliança Democrática - PMDB + Dissidentes do PDS / PFL]
+    H --> I[Janeiro de 1985: Vitória de Tancredo Neves no Colégio Eleitoral contra Paulo Maluf]
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. Quando e Porque Ocorreu</h2>
+          <p class="mb-3">
+            Em 1982, os brasileiros puderam eleger governadores estaduais pela primeira vez desde 1965. Com a oposição vencendo em estados-chave como São Paulo (Franco Montoro), Rio de Janeiro (Leonel Brizola) e Minas Gerais (Tancredo Neves), o desejo da sociedade de retomar o direito de escolher também o Presidente da República tornou-se incontrolável.
+          </p>
+          <p class="mb-3">
+            Em março de 1983, o deputado federal mato-grossense <strong>Dante de Oliveira (PMDB)</strong> propôs uma Emenda Constitucional restabelecendo o voto direto para a sucessão do presidente João Figueiredo. A grave recessão econômica, a inflação galopante e a dívida externa aceleraram o descontentamento popular.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. Quem Apoiou e Figuras Envolvidas</h2>
+          <p class="mb-3">
+            O movimento uniu lideranças que abrangiam todo o espectro político, sindicatos, artistas e intelectuais:
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-slate-300">
+            <li><strong>Políticos da Oposição:</strong> Ulysses Guimarães ("Senhor Diretas"), Tancredo Neves, Leonel Brizola, Luiz Inácio Lula da Silva, Fernando Henrique Cardoso e Mário Covas.</li>
+            <li><strong>Artistas e Esportistas:</strong> Fafá de Belém (que cantava o Hino Nacional nos palanques), Osmar Santos (locutor e animador oficial dos atos), Chico Buarque, Milton Nascimento, e os jogadores do movimento <em>Democracia Corinthiana</em> (Sócrates, Casagrande e Wladimir).</li>
+            <li><strong>Comícios Históricos:</strong> O comício da Candelária (Rio de Janeiro) reuniu 1 milhão de pessoas; o do Vale do Anhangabaú (São Paulo), em 16 de abril de 1984, reuniu cerca de 1,5 milhão de cidadãos vestidos de amarelo.</li>
+          </ul>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-rose-400">3. Quando e Como Acabou</h2>
+          <p class="mb-3">
+            Na noite de <strong>25 de abril de 1984</strong>, a Emenda Dante de Oliveira foi a votação na Câmara dos Deputados sob censura à transmissão televisiva imposta pelo governo militar. A proposta obteve 298 votos a favor, 65 contra e 3 abstenções, mas foram necessárias 320 abstenções/ausências (112 deputados da bancada governista do PDS não compareceram) para impedir que a emenda atingisse os dois terços regimentais exigidos.
+          </p>
+          <p class="mb-3">
+            Apesar da frustração popular, a energia cívica das ruas forçou a oposição a articular a <strong>Aliança Democrática</strong> (união do PMDB com a Frente Liberal de dissidentes do PDS liderados por José Sarney e Aureliano Chaves). Essa aliança lançou a chapa Tancredo Neves / José Sarney no Colégio Eleitoral, derrotando o candidato do regime, Paulo Maluf, em 15 de janeiro de 1985 e pondo fim a 21 anos de ditadura.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

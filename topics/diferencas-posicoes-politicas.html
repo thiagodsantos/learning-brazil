@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diferenças de Posições Políticas no Brasil — História do Brasil</title>
+  <meta name="description" content="Análise do espectro político brasileiro: esquerda, centro e direita, o papel do Estado na economia, valores morais, programas sociais e alianças partidárias.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-cyan-400">Política</span>
+        <span>/</span>
+        <span class="text-slate-200">Espectro Político</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Diferenças de Posições Políticas no Brasil
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        Como se estruturam a Esquerda, o Centro (e o Centrão fisiológico) e a Direita no cenário brasileiro: valores fundamentais, papel do Estado e pautas prioritárias.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>Espectro Político e Eixos de Convergência / Divergência</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart LR
+    subgraph Esquerda
+      E1[Papel Ativo do Estado indutor]
+      E2[Distribuição de Renda & SUS/Educação Pública]
+      E3[Direitos Humanos e Pautas Identitárias]
+    end
+
+    subgraph Centro & Centrão
+      C1[Pragmatismo Eleitoral & Coalizão]
+      C2[Acomodação de Interesses Regionais]
+      C3[Controle do Orçamento e Emendas]
+    end
+
+    subgraph Direita & Conservadorismo
+      D1[Livre Mercado & Privatizações]
+      D2[Responsabilidade Fiscal e Estado Enxuto]
+      D3[Valores Tradicionais, Família e Segurança Punitiva]
+    end
+
+    E1 <--> C1
+    C1 <--> D1
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-rose-400">1. A Esquerda no Brasil</h2>
+          <p class="mb-3">
+            <strong>Valores Centrais:</strong> Igualdade social, redução das assimetrias de classe e raça, defesa dos direitos dos trabalhadores e soberania nacional sobre recursos estratégicos (como petróleo e energia).
+          </p>
+          <p class="mb-3">
+            <strong>Pautas que defendem:</strong>
+          </p>
+          <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-xs sm:text-sm">
+            <li>Estado de bem-estar social financiado por tributação progressiva sobre grandes fortunas e dividendos;</li>
+            <li>Fortalecimento dos serviços públicos universais (SUS, universidades federais, programas de transferência como o Bolsa Família);</li>
+            <li>Reforma agrária e proteção ambiental rígida em biomas como a Amazônia e o Cerrado;</li>
+            <li>Defesa dos direitos LGBTQIA+, igualdade de gênero, demarcação de terras indígenas e combate ao racismo estrutural.</li>
+          </ul>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. O Centro e o Fenômeno do "Centrão"</h2>
+          <p class="mb-3">
+            No Brasil, é essencial distinguir o <em>Centro programático</em> (social-democracia clássica e liberalismo social moderado) do chamado <strong>Centrão</strong>.
+          </p>
+          <p class="mb-3">
+            O Centrão é um agrupamento informal de partidos com forte enraizamento regional (como PP, Republicanos, União Brasil, PSD) que não se define prioritariamente por convicções ideológicas rígidas, mas sim pelo <strong>fisiologismo pragmático</strong>: negociam votos e sustentação parlamentar com qualquer presidente (seja de esquerda ou de direita) em troca do controle de cargos em ministérios, autarquias e liberação de emendas orçamentárias.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. A Direita no Brasil</h2>
+          <p class="mb-3">
+            <strong>Valores Centrais:</strong> Liberdade individual, direito irrestrito de propriedade privada, mérito pessoal, livre concorrência e preservação de valores morais e religiosos tradicionais.
+          </p>
+          <p class="mb-3">
+            <strong>Pautas que defendem:</strong>
+          </p>
+          <ul class="list-disc list-inside space-y-1.5 text-slate-300 text-xs sm:text-sm">
+            <li>Desregulamentação da economia, redução de encargos trabalhistas e desestatização de empresas estatais;</li>
+            <li>Teto de gastos públicos e austeridade fiscal estrita;</li>
+            <li>Endurecimento penal, facilitação do acesso a armas de fogo para legítima defesa e combate militarizado ao crime organizado;</li>
+            <li>Posicionamento contrário à legalização do aborto e das drogas recreativas, alinhando-se frequentemente a bancadas evangélicas e do agronegócio (bancada da bala, boi e bíblia).</li>
+          </ul>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

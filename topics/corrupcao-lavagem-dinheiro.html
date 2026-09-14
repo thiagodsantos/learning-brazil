@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrupção, Lavagem de Dinheiro e Grandes Escândalos — História do Brasil</title>
+  <meta name="description" content="A corrupção sistêmica no Brasil: dos Anões do Orçamento à Operação Lava Jato, o papel dos doleiros, empreiteiras e os prejuízos bilionários ao país.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-rose-400">Justiça & Estado</span>
+        <span>/</span>
+        <span class="text-slate-200">Corrupção e Lavagem</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Corrupção, Lavagem de Dinheiro e Grandes Escândalos
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        A anatomia do desvio de recursos públicos no Brasil: o cartel das empreiteiras, o papel dos doleiros na lavagem internacional e o impacto da Operação Lava Jato.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>O Ciclo do Cartel e da Lavagem de Dinheiro (Modelo Lava Jato)</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Cartel de Empreiteiras: Odebrecht, OAS, Camargo Corrêa] -->|Combinação prévia de preços e fraude em licitações| B[Estatais: Petrobras, Eletrobras, Valec]
+    B -->|Superfaturamento de Obras e Contratos| C[Geração de Caixa 2 nas Empreiteiras]
+    
+    C --> D[Doleiros e Operadores Financeiros: Alberto Youssef]
+    
+    subgraph Lavagem de Dinheiro
+      D --> E1[Contas em Paraísos Fiscais: Suíça, Panamá]
+      D --> E2[Empresas de Fachada e Notas Frias]
+      D --> E3[Compra de Obras de Arte e Imóveis]
+    end
+
+    E1 & E2 & E3 --> F[Pagamento de Propinas a Políticos, Diretores de Estatais e Partidos]
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. Histórico de Escândalos na República Moderna</h2>
+          <ul class="list-disc list-inside space-y-2 text-slate-300 text-xs sm:text-sm">
+            <li><strong>Anões do Orçamento (1993):</strong> Deputados que manipulavam emendas orçamentárias para desviar verbas de ministérios para empreiteiras e entidades fantasmas. O caso notabilizou-se pela desculpa do deputado João Alves, que alegou ter ganhado na loteria mais de 200 vezes para justificar sua fortuna.</li>
+            <li><strong>Sivam e Pasta Rosa (Governo FHC):</strong> Denúncias de tráfico de influência no contrato do Sistema de Vigilância da Amazônia e doações ilegais de bancos a campanhas políticas.</li>
+            <li><strong>Mensalão (2005):</strong> Compra de apoio parlamentar no Congresso Nacional durante o governo Lula.</li>
+          </ul>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. A Operação Lava Jato (2014 - 2021)</h2>
+          <p class="mb-3">
+            Iniciada em março de 2014 investigando uma rede de doleiros (como Alberto Youssef) que lavava dinheiro em um posto de combustíveis em Brasília, a Lava Jato desvendou o maior esquema de corrupção da história do país, centrado na <strong>Petrobras</strong>.
+          </p>
+          <p class="mb-3">
+            As maiores empreiteiras do país formaram um cartel ("O Clube") para fraudar licitações da estatal. Elas cobravam sobrepreço nas obras (como a Refinaria Abreu e Lima e o Comperj) e repassavam de 1% a 3% do valor dos contratos em propina para diretores da Petrobras (como Paulo Roberto Costa e Renato Duque) e para os partidos políticos que os indicaram (PT, PMDB e PP).
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. Consequências, Prisões e o Desmonte da Operação</h2>
+          <p class="mb-3">
+            A operação inovou com o uso extensivo de <strong>delações premiadas</strong> e cooperação internacional. Levou à prisão ex-presidentes da República (Lula e Michel Temer), o ex-presidente da Câmara Eduardo Cunha, ex-governadores (Sérgio Cabral) e os presidentes das maiores empreiteiras do país (Marcelo Odebrecht).
+          </p>
+          <p>
+            As empresas assinaram <strong>acordos de leniência</strong> comprometendo-se a devolver bilhões aos cofres públicos. Contudo, a partir de 2019, com o vazamento de mensagens entre o juiz Sergio Moro e os procuradores (Vaza Jato), o STF anulou diversas condenações por considerar que houve parcialidade e quebra do devido processo legal, resultando na soltura da maioria dos políticos e na revisão das multas das empreiteiras.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

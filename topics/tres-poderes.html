@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Os Três Poderes e suas Responsabilidades — História do Brasil</title>
+  <meta name="description" content="A teoria da separação de poderes no Brasil: Executivo, Legislativo e Judiciário, sistema de freios e contrapesos (checks and balances) e formas de investidura.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-cyan-400">Instituições</span>
+        <span>/</span>
+        <span class="text-slate-200">Três Poderes</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Os Três Poderes e suas Responsabilidades
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        Como a República Federativa do Brasil equilibra o Executivo, o Legislativo e o Judiciário: atribuições privativas, formas de escolha e mecanismos de controle mútuo.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>Mecanismo de Freios e Contrapesos (Checks and Balances)</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    subgraph Poder Executivo
+      EX[Presidência da República & Ministérios]
+      EX -->|Veta ou Sanciona Leis & Edita Medidas Provisórias| LEG
+      EX -->|Indica Ministros do STF e STJ| JUD
+    end
+
+    subgraph Poder Legislativo
+      LEG[Congresso Nacional: Câmara e Senado]
+      LEG -->|Derruba Vetos, Aprova Orçamento e Fiscaliza - TCU| EX
+      LEG -->|Aprova Indicações e Julga Impeachment no Senado| JUD
+    end
+
+    subgraph Poder Judiciário
+      JUD[STF, STJ e Tribunais Federais/Estaduais]
+      JUD -->|Controle de Constitucionalidade das Leis| LEG
+      JUD -->|Julga Atos de Ilícito e Crimes de Responsabilidade| EX
+    end
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. Poder Executivo: Administrar e Governar</h2>
+          <p class="mb-3">
+            <strong>Como se elege:</strong> Por voto direto, majoritário e em dois turnos (quando nenhum candidato obtém 50% + 1 voto válido no primeiro turno em municípios com mais de 200 mil eleitores, estados e União), para mandato de 4 anos com direito a uma reeleição consecutiva.
+          </p>
+          <p class="mb-3">
+            <strong>O que faz:</strong> Aplica as leis, formula políticas públicas (saúde, educação, infraestrutura), gere o orçamento público, comanda a administração pública e as Forças Armadas, e conduz as relações diplomáticas internacionais.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. Poder Legislativo: Legislar e Fiscalizar</h2>
+          <p class="mb-3">
+            <strong>Como se elege:</strong> No plano federal, o Congresso é bicameral:
+          </p>
+          <ul class="list-disc list-inside space-y-2 mb-3 text-slate-300">
+            <li><strong>Câmara dos Deputados (513 deputados):</strong> Representam o povo. Eleitos pelo sistema proporcional com quociente eleitoral para mandato de 4 anos.</li>
+            <li><strong>Senado Federal (81 senadores):</strong> Representam os 26 Estados e o DF (3 por ente). Eleitos pelo sistema majoritário para mandatos de 8 anos (renovação alternada por 1/3 e 2/3 a cada 4 anos).</li>
+          </ul>
+          <p>
+            <strong>O que faz:</strong> Elabora e vota projetos de lei, reformas constitucionais (PECs), aprova o Plano Plurianual e a Lei Orçamentária Anual, e exerce a fiscalização contábil e política do Executivo com o auxílio do Tribunal de Contas da União (TCU).
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. Poder Judiciário: Julgar e Guardar a Constituição</h2>
+          <p class="mb-3">
+            <strong>Como é composto:</strong> Não há eleição popular para cargos de juiz. O ingresso se dá por concurso público de provas e títulos. Nos tribunais superiores:
+          </p>
+          <ul class="list-disc list-inside space-y-2 mb-3 text-slate-300">
+            <li><strong>STF (11 ministros):</strong> Indicados pelo Presidente da República entre cidadãos de notável saber jurídico e reputação ilibada, com aprovação obrigatória por maioria absoluta do Senado Federal após sabatina pública.</li>
+          </ul>
+          <p>
+            <strong>O que faz:</strong> Aplica a legislação e resolve litígios entre cidadãos e o poder público. O Supremo Tribunal Federal (STF) atua como guarda da Constituição Federal, exercendo o controle de constitucionalidade de normas.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escândalo do Mensalão (2005) — História do Brasil</title>
+  <meta name="description" content="O esquema de compra de votos parlamentares no governo Lula, a denúncia de Roberto Jefferson, a Ação Penal 470 no STF e as condenações históricas.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-rose-400">Crises Políticas</span>
+        <span>/</span>
+        <span class="text-slate-200">Mensalão</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Escândalo do Mensalão (2005)
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        A engrenagem de corrupção que abalou o primeiro mandato de Lula: desvio de recursos públicos e empréstimos fictícios para garantir a fidelidade de deputados no Congresso Nacional.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>A Estrutura do Esquema e o Fluxo do Dinheiro</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    subgraph Origem dos Recursos
+      A1[Fundo Visanet / Banco do Brasil] --> B[Agências de Publicidade de Marcos Valério - DNA e SMP&B]
+      A2[Empréstimos Fictícios no Banco Rural e BMG] --> B
+    end
+
+    subgraph Operadores Políticos
+      B --> C[Núcleo Político do PT: José Dirceu, Delúbio Soares e José Genoino]
+    end
+
+    subgraph Destinatários Finais
+      C -->|Distribuição de Malotes de Dinheiro em Espécie| D[Deputados da Base Aliada: PP, PL, PTB, PMDB]
+      D -->|Votação Favorável a Projetos do Governo| E[Aprovação de Reformas Previdenciária e Tributária]
+    end
+
+    subgraph O Desfecho
+      F[Junho 2005: Roberto Jefferson denuncia o esquema na Folha de S.Paulo] --> G[CPI dos Correios]
+      G --> H[Ação Penal 470 no STF - Relator Joaquim Barbosa]
+      H --> I[2012: Condenação de 25 réus por corrupção ativa, passiva, peculato e lavagem]
+    end
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. Quando e Porque Ocorreu</h2>
+          <p class="mb-3">
+            O escândalo veio a público em <strong>junho de 2005</strong>, durante o primeiro mandato do presidente Luiz Inácio Lula da Silva. O governo, eleito com minoria no Congresso, precisava aprovar reformas estruturais (como a da Previdência).
+          </p>
+          <p class="mb-3">
+            Em vez de negociar cargos e emendas de forma tradicional, o núcleo duro do governo montou um esquema de pagamentos periódicos (uma "mesada" ou "mensalão" de R$ 30 mil) a deputados de partidos aliados (PP, PL, PTB, PMDB) para garantir fidelidade nas votações.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. Quem Apoiou e Políticos Envolvidos</h2>
+          <ul class="list-disc list-inside space-y-2 text-slate-300 text-xs sm:text-sm">
+            <li><strong>O Denunciante:</strong> O deputado Roberto Jefferson (PTB), que, após ser implicado em um escândalo nos Correios, concedeu entrevista explosiva à Folha de S.Paulo revelando o esquema.</li>
+            <li><strong>O Núcleo Político:</strong> José Dirceu (Ministro da Casa Civil e "capitão do time"), José Genoino (Presidente do PT) e Delúbio Soares (Tesoureiro do PT).</li>
+            <li><strong>O Núcleo Financeiro/Operacional:</strong> O publicitário Marcos Valério (operador das contas e saques em espécie) e dirigentes do Banco Rural (Kátia Rabello).</li>
+            <li><strong>Os Beneficiários:</strong> Parlamentares como Valdemar Costa Neto (PL), Pedro Corrêa (PP) e João Paulo Cunha (PT).</li>
+          </ul>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. Quando e Como Acabou: O Julgamento Histórico</h2>
+          <p class="mb-3">
+            O caso resultou na <strong>Ação Penal 470</strong> no Supremo Tribunal Federal (STF), que teve seu julgamento transmitido ao vivo pela TV Justiça em 2012. Sob a relatoria do ministro <strong>Joaquim Barbosa</strong>, o STF inovou ao aplicar a <em>Teoria do Domínio do Fato</em> para condenar os mandantes intelectuais que não sujaram as mãos diretamente com o dinheiro.
+          </p>
+          <p>
+            Dos 37 réus julgados, <strong>25 foram condenados</strong> a penas de prisão por crimes de corrupção ativa, corrupção passiva, peculato, lavagem de dinheiro e evasão de divisas. O Mensalão marcou a primeira vez na história republicana em que políticos de alto escalão e grandes empresários foram efetivamente presos e cumpriram pena em regime fechado.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

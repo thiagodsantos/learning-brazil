@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Esquema das 'Rachadinhas' no Poder Público — História do Brasil</title>
+  <meta name="description" content="A prática de desvio de salários de assessores parlamentares, o caso Queiroz na ALERJ e a tipificação penal do peculato.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-rose-400">Corrupção</span>
+        <span>/</span>
+        <span class="text-slate-200">Rachadinhas</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        O Esquema das "Rachadinhas" no Poder Público
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        A apropriação ilegal de salários de servidores comissionados por parlamentares: como funciona o esquema, a lavagem do dinheiro e os casos de repercussão nacional.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>Mecânica do Desvio e Lavagem de Dinheiro</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Orçamento Público: Verba de Gabinete do Parlamentar] --> B[Nomeação de Assessores Comissionados / Fantasmas]
+    B --> C[Pagamento de Salários pelo Estado na conta do Assessor]
+    C --> D[O Assessor saca em espécie ou transfere de 50% a 90% do valor]
+    D --> E[Operador Financeiro do Gabinete recolhe o dinheiro]
+    
+    subgraph Lavagem do Dinheiro
+      E --> F1[Pagamento de despesas pessoais do político em dinheiro vivo]
+      E --> F2[Compra de imóveis subfaturados na escritura]
+      E --> F3[Depósitos fracionados em lojas de fachada ou franquias]
+    end
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. O que é a Rachadinha?</h2>
+          <p class="mb-3">
+            A "rachadinha" é o termo popular para a prática criminosa em que um político (vereador, deputado ou senador) exige que os servidores nomeados para cargos de confiança em seu gabinete devolvam parte ou a quase totalidade de seus salários.
+          </p>
+          <p>
+            Muitas vezes, os nomeados são <strong>"funcionários fantasmas"</strong> — pessoas que não prestam nenhum serviço real ao poder público, emprestando apenas seus nomes e contas bancárias para que o político se aproprie da verba de gabinete. Juridicamente, a prática configura o crime de <strong>Peculato</strong> (art. 312 do Código Penal: apropriação de dinheiro público por funcionário público), além de associação criminosa e lavagem de dinheiro.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. O Caso Queiroz e a ALERJ</h2>
+          <p class="mb-3">
+            Embora seja uma prática antiga e disseminada em câmaras municipais e assembleias legislativas de todo o país, o esquema ganhou os holofotes nacionais em 2018, a partir de um relatório do Conselho de Controle de Atividades Financeiras (COAF).
+          </p>
+          <p class="mb-3">
+            O COAF detectou movimentações atípicas de <strong>R$ 1,2 milhão</strong> na conta de <strong>Fabrício Queiroz</strong>, ex-policial militar e assessor do então deputado estadual Flávio Bolsonaro na Assembleia Legislativa do Rio de Janeiro (ALERJ). As investigações do Ministério Público do Rio de Janeiro (MPRJ) apontaram que Queiroz atuava como o operador financeiro do gabinete, recolhendo o dinheiro de dezenas de assessores (incluindo parentes de milicianos) e pagando despesas pessoais da família do parlamentar.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. Consequências e Impunidade</h2>
+          <p class="mb-3">
+            Apesar da gravidade do crime, que drena centenas de milhões de reais dos cofres públicos anualmente, as condenações definitivas por rachadinha são raras.
+          </p>
+          <p>
+            Os processos costumam se arrastar por anos devido ao <strong>foro privilegiado</strong> dos políticos envolvidos e a anulações processuais em tribunais superiores (STJ e STF) baseadas em falhas na quebra de sigilo bancário ou na competência do juízo investigador, gerando um sentimento generalizado de impunidade na sociedade.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

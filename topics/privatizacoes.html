@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privatizações no Brasil: História e Impactos — História do Brasil</title>
+  <meta name="description" content="O Programa Nacional de Desestatização (PND): privatização da Vale, Telebrás, CSN, ferrovias e Eletrobras, os debates sobre soberania e os benefícios práticos.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-amber-400">Economia</span>
+        <span>/</span>
+        <span class="text-slate-200">Privatizações</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Privatizações no Brasil: História e Impactos
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        A mudança de paradigma do Estado empresário para o Estado regulador: os leilões do PND nos governos Collor e FHC, a universalização da telefonia e as polêmicas sobre patrimônio nacional.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>O Ciclo das Privatizações e Agências Reguladoras</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Crise Fiscal do Estado nos anos 1980: Estatais endividadas e sem capacidade de investimento] --> B[1990: Criação do Programa Nacional de Desestatização - PND]
+    B --> C[Governo Collor/Itamar: Siderurgia - CSN, Usiminas e Cosipa]
+    C --> D[Governo FHC 1995-2002: Grande Onda de Privatizações]
+    
+    subgraph Marcos Emblemáticos
+      D --> E1[1997: Vale do Rio Doce - Mineração]
+      D --> E2[1998: Sistema Telebrás - Telefonia Fixa e Celular]
+      D --> E3[Ferrovias RFFSA e Distribuidoras Estaduais de Energia]
+    end
+
+    subgraph Criação do Modelo Regulador
+      D --> F[Agências Reguladoras: ANATEL, ANEEL, ANP, ANTT]
+    end
+
+    subgraph Casos Recentes
+      D --> G[Governos Temer/Bolsonaro: Aeroportos, BR Distribuidora e Eletrobras 2022]
+    end
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. Quais Foram as Principais Privatizações</h2>
+          <ul class="list-disc list-inside space-y-2 text-slate-300 text-xs sm:text-sm">
+            <li><strong>Siderúrgicas (1991–1993):</strong> Usiminas, Companhia Siderúrgica Nacional (CSN) e Cosipa, vendidas sob protestos inflamados no Rio de Janeiro.</li>
+            <li><strong>Companhia Vale do Rio Doce (1997):</strong> Arrematada pelo consórcio liderado pela CSN e fundos de pensão por R$ 3,3 bilhões, transformando-se em uma das maiores mineradoras do planeta.</li>
+            <li><strong>Sistema Telebrás (1998):</strong> A maior privatização da história da América Latina, leiloada na Bolsa do Rio por R$ 22 bilhões (com ágio de 64%), dividida em operadoras espelho e grupos estrangeiros como a Telefónica.</li>
+            <li><strong>Setor Elétrico e Rodoviário:</strong> Concessões da malha rodoviária federal (Via Dutra, etc.) e privatização da Eletrobras (2022) via oferta de ações diluindo a participação da União.</li>
+          </ul>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. Houve ou Não Benefícios? O Debate</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+            <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+              <h3 class="font-bold text-emerald-400 mb-1">Argumentos Favoráveis e Ganhos</h3>
+              <ul class="list-disc list-inside space-y-1 text-slate-300">
+                <li><strong>Democratização do Acesso:</strong> Na Telebrás estatal, uma linha telefônica custava milhares de dólares e levava anos na fila; com a privatização e celulares pré-pagos, o acesso virou universal;</li>
+                <li><strong>Alívio Fiscal:</strong> Cessou a drenagem de recursos públicos em estatais deficitárias que acumulavam prejuízos;</li>
+                <li><strong>Competitividade Global:</strong> A Vale multiplicou exportações e investimentos em pesquisa mineral.</li>
+              </ul>
+            </div>
+            <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+              <h3 class="font-bold text-rose-400 mb-1">Críticas e Prejuízos Apontados</h3>
+              <ul class="list-disc list-inside space-y-1 text-slate-300">
+                <li><strong>Subavaliação de Patrimônio:</strong> Críticos alegaram que ativos estratégicos (como as reservas minerais da Vale) foram vendidos a "preço de banana";</li>
+                <li><strong>Uso de "Moedas Podres":</strong> Aceitação de títulos de dívida pública desvalorizados com 100% de valor de face nos leilões;</li>
+                <li><strong>Desastres Ambientais e Tarifas:</strong> Tragédias de Mariana (2015) e Brumadinho (2019) e aumento recorrente de tarifas de energia e pedágios.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. Políticos e Empresas Envolvidos</h2>
+          <p class="mb-3 text-xs sm:text-sm">
+            O processo foi capitaneado pelo BNDES sob comando de economistas como Mendonça de Barros, Elena Landau e com o ministro das Comunicações <strong>Sérgio Motta</strong>. No lado empresarial, figuraram o consórcio Vicunha/Benjamin Steinbruch, a multinacional Telefónica, a Telecom Italia, além de fundos de pensão estatais como Previ e Petros que integraram os blocos de controle acionário.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

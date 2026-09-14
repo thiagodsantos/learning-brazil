@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grandes Polêmicas na Gestão do País — História do Brasil</title>
+  <meta name="description" content="As maiores controvérsias da gestão pública brasileira: a Emenda da Reeleição, as Pedaladas Fiscais, a gestão da Pandemia e o Orçamento Secreto.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-rose-400">Gestão Pública</span>
+        <span>/</span>
+        <span class="text-slate-200">Polêmicas de Gestão</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Grandes Polêmicas na Gestão do País
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        Decisões governamentais que alteraram os rumos da República: da compra de votos para a reeleição ao uso político do orçamento e a crise sanitária da COVID-19.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>Linha do Tempo das Controvérsias Institucionais</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+timeline
+    title Polêmicas de Gestão (1997 - Atualidade)
+    1997 : Emenda da Reeleição : Denúncias de compra de votos de deputados no governo FHC
+    2014 - 2015 : Pedaladas Fiscais : Atraso de repasses a bancos públicos para maquiar o déficit : Base para o Impeachment de Dilma Rousseff
+    2020 - 2021 : Gestão da Pandemia (COVID-19) : Atraso na compra de vacinas : Promoção de tratamentos ineficazes (Cloroquina) : CPI da Pandemia
+    2020 - 2022 : Orçamento Secreto (Emendas RP9) : Distribuição bilionária de verbas sem transparência : Compra de apoio parlamentar no governo Bolsonaro
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. A Emenda da Reeleição (1997)</h2>
+          <p class="mb-3">
+            A Constituição de 1988 proibia a reeleição para cargos do Executivo. Em 1997, o governo de Fernando Henrique Cardoso (FHC) articulou a aprovação da Emenda Constitucional nº 16, permitindo um segundo mandato consecutivo.
+          </p>
+          <p>
+            A polêmica estourou quando gravações revelaram que deputados federais (como Ronivon Santiago e João Maia) receberam R$ 200 mil cada para votar a favor da emenda. Os deputados renunciaram para evitar a cassação, mas o governo barrou a criação de uma CPI para investigar os financiadores do esquema, e a emenda foi mantida.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. As Pedaladas Fiscais e o Impeachment (2015-2016)</h2>
+          <p class="mb-3">
+            Durante o governo de Dilma Rousseff, o Tesouro Nacional atrasou sistematicamente o repasse de bilhões de reais para bancos públicos (Caixa, Banco do Brasil e BNDES) que operavam programas sociais como o Bolsa Família e o Plano Safra.
+          </p>
+          <p>
+            Na prática, os bancos pagavam os benefícios com recursos próprios, configurando um empréstimo ilegal dos bancos ao seu controlador (a União), o que fere a Lei de Responsabilidade Fiscal. Essa maquiagem contábil para esconder o rombo nas contas públicas foi o embasamento jurídico aceito pelo Congresso para o <strong>impeachment de Dilma Rousseff em 2016</strong>.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. O Orçamento Secreto (Emendas RP9)</h2>
+          <p class="mb-3">
+            Criado no final de 2019 e amplamente utilizado no governo de Jair Bolsonaro, o mecanismo das emendas de relator (RP9) permitiu que bilhões de reais do orçamento federal fossem distribuídos a deputados e senadores aliados sem que o nome do parlamentar beneficiado fosse registrado publicamente.
+          </p>
+          <p>
+            O esquema gerou escândalos de superfaturamento na compra de tratores, caminhões de lixo e kits de robótica em prefeituras do interior. Em 2022, o STF declarou o Orçamento Secreto inconstitucional por violar os princípios da transparência e da impessoalidade na administração pública.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

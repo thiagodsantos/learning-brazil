@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instabilidade das Moedas até o Plano Real (1994) — História do Brasil</title>
+  <meta name="description" content="A hiperinflação brasileira nos anos 1980 e 1990: as trocas sucessivas de moedas (Cruzeiro, Cruzado, Cruzado Novo, Cruzeiro Real) e o sucesso da URV e do Real.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-amber-400">Economia</span>
+        <span>/</span>
+        <span class="text-slate-200">Das Moedas ao Plano Real</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Instabilidades das Moedas até o Plano Real (1994)
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        Como o monstro da hiperinflação destruiu salários e gerou seis reformas monetárias em menos de uma década, até a revolucionária engenharia financeira da URV.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>A Ciranda das Moedas e o Mecanismo da URV</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Cruzeiro - Cr$ até 1986] -->|Corte de 3 zeros + Congelamento| B[1986: Plano Cruzado - Cz$]
+    B -->|Fracasso do congelamento / Ágio| C[1989: Plano Verão - Cruzado Novo - NCz$]
+    C -->|Confisco das contas| D[1990: Plano Collor - Retorno ao Cruzeiro - Cr$]
+    D -->|Hiperinflação de quase 2.500% a.a.| E[1993: Cruzeiro Real - CR$]
+    
+    subgraph Engenharia do Plano Real
+      E --> F[Fase 1: Ajuste Fiscal / Fundo Social de Emergência]
+      F --> G[Fase 2: Março de 1994 - URV Unidade Real de Valor]
+      G -->|Alinhamento de preços relativos sem congelamento| H[Fase 3: 01 de Julho de 1994 - Emissão do REAL - R$]
+    end
+
+    H --> I[Estabilidade Monetária, Fim do Imposto Inflacionário e Queda da Pobreza]
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-rose-400">1. O Drama da Hiperinflação Inercial</h2>
+          <p class="mb-3">
+            Nas décadas de 1980 e início de 1990, o Brasil viveu uma das piores hiperinflações do mundo, alcançando a taxa absurda de <strong>2.477% em 1993</strong>. Supermercados remarcavam preços com etiquetas automáticas duas vezes ao dia. Quem recebia salário precisava correr ao supermercado no mesmo dia para comprar mantimentos antes que o dinheiro perdesse o valor.
+          </p>
+          <p class="mb-3">
+            O fenômeno devia-se à <strong>inflação inercial</strong>: a indexação generalizada da economia. Contratos, aluguéis e salários eram reajustados pela inflação passada, projetando a inflação de ontem para os preços de amanhã em uma espiral infinita de desconfiança na moeda estatal.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. A Ciranda das Trocas de Moedas Fracassadas</h2>
+          <div class="space-y-2 text-xs sm:text-sm">
+            <p><strong>1986 (Plano Cruzado):</strong> Sarney e Dílson Funaro cortaram 3 zeros e congelaram preços. Surgiram os "Fiscais do Sarney", mas logo faltaram carnes e produtos essenciais nas prateleiras (ágio clandestino).</p>
+            <p><strong>1987 (Plano Bresser):</strong> Novo congelamento de 90 dias com URP, que fracassou logo após o degelo.</p>
+            <p><strong>1989 (Plano Verão):</strong> Criação do Cruzado Novo (cortou mais 3 zeros) e juros reais na estratosfera.</p>
+            <p><strong>1990 (Planos Collor I e II):</strong> Retorno do Cruzeiro com bloqueio de ativos financeiros por 18 meses.</p>
+            <p><strong>1993 (Cruzeiro Real):</strong> Cortou mais 3 zeros provisoriamente sob o governo Itamar Franco.</p>
+          </div>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">3. A Revolução do Plano Real e a URV</h2>
+          <p class="mb-3">
+            Em maio de 1993, o presidente Itamar Franco nomeou <strong>Fernando Henrique Cardoso</strong> para o Ministério da Fazenda. FHC reuniu uma equipe brilhante de economistas: <strong>Pedro Malan, Edmar Bacha, André Lara Resende, Pérsio Arida e Gustavo Franco</strong>.
+          </p>
+          <p class="mb-3">
+            A grande inovação foi não apelar para congelamentos nem confiscos. Em março de 1994, criaram a <strong>URV (Unidade Real de Valor)</strong>: uma moeda puramente contábil (sem cédulas impressas) que variava diariamente acompanhando o dólar. Os preços em cruzeiros reais continuavam subindo numericamente, mas em URV permaneciam estáveis. Quando todos os contratos e preços estavam equalizados na URV, em <strong>1º de julho de 1994</strong> a URV foi transformada na moeda definitiva: o <strong>Real (R$)</strong>, com a taxa de 1 Real = 1 Dólar.
+          </p>
+          <p>
+            A inflação desabou de 40% ao mês para menos de 2% ao mês, retirando milhões de famílias da miséria extrema pelo fim do "imposto inflacionário".
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

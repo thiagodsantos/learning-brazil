@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independência do Brasil (1822) — História do Brasil</title>
+  <meta name="description" content="A ruptura entre Brasil e Portugal em 1822, o Grito do Ipiranga, as guerras de independência provinciais e os efeitos colaterais conservadores.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-emerald-400">Império</span>
+        <span>/</span>
+        <span class="text-slate-200">Independência do Brasil</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Independência do Brasil (1822)
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        O processo de separação política da metrópole, o papel de Dom Pedro I e José Bonifácio, os conflitos militares sangrentos nas províncias e a preservação do latifúndio escravista.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>Evolução da Crise e Ruptura com Lisboa</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[1808: Família Real foge para o Brasil & Abertura dos Portos] --> B[1815: Elevação a Reino Unido com Portugal e Algarves]
+    B --> C[1820: Revolução Liberal do Porto exige retorno do Rei e recolonização]
+    C --> D[1821: D. João VI retorna a Lisboa; D. Pedro fica como Príncipe Regente]
+    D --> E[Jan 1822: Dia do Fico - D. Pedro decide desobedecer às Cortes]
+    E --> F[07 Set 1822: Grito do Ipiranga - Rompimento Oficial]
+    F --> G[1822-1824: Guerras de Independência na Bahia, Maranhão e Cisplatina]
+    G --> H[Reconhecimento Internacional: Dívida de 2 milhões de libras com a Inglaterra]
+    H --> I[Constituição Outorgada de 1824: Poder Moderador Absolutista]
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. O que Aconteceu</h2>
+          <p class="mb-3">
+            A transferência da corte portuguesa para o Rio de Janeiro em 1808, sob escolta da Marinha Britânica para escapar das tropas de Napoleão Bonaparte, transformou o Brasil no centro do império lusitano. A <strong>Abertura dos Portos às Nações Amigas</strong> pôs fim ao pacto colonial mercantilista.
+          </p>
+          <p class="mb-3">
+            Em 1820, a Revolução Liberal do Porto exigiu o regresso de D. João VI e tentou rebaixar o Brasil novamente à condição de colônia subordinada. As elites locais (proprietários de terras, burocratas e comerciantes liderados por <strong>José Bonifácio de Andrada e Silva</strong> e pela princesa <strong>Maria Leopoldina</strong>) articularam junto a Dom Pedro a permanência no país (Dia do Fico, 9 de janeiro de 1822), culminando na proclamação da independência às margens do riacho Ipiranga em 7 de setembro de 1822.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. Guerras de Independência e o Mito da Ruptura Pacífica</h2>
+          <p class="mb-3">
+            Diferente da narrativa de que a independência ocorreu sem derramamento de sangue, houve intensas batalhas armadas contra tropas fiéis a Portugal:
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-slate-300">
+            <li><strong>Guerra na Bahia (Dois de Julho de 1823):</strong> Um dos conflitos mais sangrentos, com protagonismo popular decisivo de nomes como <strong>Maria Quitéria</strong> e o corneteiro Lopes, expulsando o general português Madeira de Melo de Salvador.</li>
+            <li><strong>Batalha do Jenipapo (1823, Piauí):</strong> Confronto campal violento travado por sertanejos piauienses e maranhenses armados de foices e facões contra o exército regular português.</li>
+            <li><strong>Mercenários Britânicos:</strong> Dom Pedro contratou o almirante inglês Lorde Cochrane para combater as esquadras portuguesas no Maranhão e no Pará.</li>
+          </ul>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-rose-400">3. Efeitos Colaterais e Consequências Sociais</h2>
+          <ul class="list-disc list-inside space-y-2 text-slate-300">
+            <li><strong>Preservação da Monarquia e da Escravidão:</strong> Enquanto a América Espanhola fragmentou-se em repúblicas abolicionistas, o Brasil permaneceu uma monarquia unitária sob a mesma dinastia de Bragança, mantendo a escravidão intacta.</li>
+            <li><strong>Subordinação Financeira:</strong> Para obter o reconhecimento de Portugal e da Inglaterra, o Brasil assumiu uma indenização de 2 milhões de libras esterlinas a Portugal, iniciando sua trajetória de endividamento externo com bancos de Londres.</li>
+            <li><strong>Autoritarismo Político:</strong> Em 1823, D. Pedro I dissolveu à força a Assembleia Constituinte ("Noite da Agonia") e outorgou em 1824 uma Carta que criava o <strong>Poder Moderador</strong>, dando ao imperador controle absoluto sobre os demais poderes.</li>
+          </ul>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

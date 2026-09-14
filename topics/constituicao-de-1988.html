@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constituição Cidadã de 1988 — História do Brasil</title>
+  <meta name="description" content="A Assembleia Nacional Constituinte de 1987-1988, a liderança de Ulysses Guimarães, os direitos fundamentais conquistados e o papel do Centrão.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-cyan-400">Redemocratização</span>
+        <span>/</span>
+        <span class="text-slate-200">Constituição de 1988</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Constituição Cidadã de 1988
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        O marco fundador do Estado Democrático de Direito no Brasil: 20 meses de Assembleia Constituinte, intensa participação popular e a consagração dos direitos civis e sociais.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>A Estrutura da Constituinte e o Texto Constitucional</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Fevereiro de 1987: Instalação da Assembleia Nacional Constituinte - 559 parlamentares] --> B[Presidência: Ulysses Guimarães & Relatoria: Bernardo Cabral]
+    B --> C[Participação Popular: 122 Emendas Populares com mais de 12 milhões de assinaturas]
+    
+    subgraph Forças em Disputa
+      C --> D1[Progressistas & Esquerda: Direitos Sociais, Demarcação Indígena e Reforma Agrária]
+      C --> D2[O Centrão: Articulação conservadora com apoio do presidente José Sarney]
+    end
+
+    D1 & D2 --> E[05 de Outubro de 1988: Promulgação Solene da Carta Magna]
+    
+    subgraph Conquistas Históricas
+      E --> F1[Inviolabilidade de Direitos: Fim da Censura e Racismo como Crime Inafiançável]
+      E --> F2[Criação do SUS - Sistema Único de Saúde universal e gratuito]
+      E --> F3[Autonomia do Ministério Público e Defensoria Pública]
+      E --> F4[Demarcação de Terras Indígenas e Territórios Quilombolas]
+    end
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. Quando e Porque Ocorreu</h2>
+          <p class="mb-3">
+            Com o fim da Ditadura Militar em 1985 e a morte trágica de Tancredo Neves antes da posse, o vice-presidente <strong>José Sarney</strong> assumiu o governo com o compromisso de sepultar o entulho autoritário da Constituição de 1967/69.
+          </p>
+          <p class="mb-3">
+            Eleita em novembro de 1986, a <strong>Assembleia Nacional Constituinte</strong> foi instalada em 1º de fevereiro de 1987. Composta por 559 congressistas (senadores e deputados federais), funcionou durante 20 meses com comissões temáticas abertas e audiências públicas inéditas.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. Quem Apoiou e Políticos Envolvidos</h2>
+          <ul class="list-disc list-inside space-y-2 text-slate-300">
+            <li><strong>Ulysses Guimarães:</strong> Presidente da Constituinte, liderança moral do processo, autor da célebre proclamação: <em>"Traidor da pátria é o traidor da Constituição. A sociedade foi Rubens Paiva, não os facínoras que o mataram. Quanto a ela, discordar sim; divergir, sim; descumprir, jamais. Afrontá-la, nunca!"</em></li>
+            <li><strong>Mário Covas e Florestan Fernandes:</strong> Lideranças que articularam garantias aos direitos sociais e trabalhistas no texto constitucional.</li>
+            <li><strong>O "Centrão":</strong> Bloco suprapartidário conservador liderado por Roberto Cardoso Alves, Inocêncio Oliveira e Amaral Netto, mobilizado para frear avanços da reforma agrária e garantir o mandato presidencial de 5 anos para José Sarney em troca de concessões de rádio e TV.</li>
+            <li><strong>Sociedade Civil:</strong> Movimento indígena liderado por <strong>Ailton Krenak</strong> (com o discurso histórico em que pintou o rosto de preto com jenipapo no plenário), a CNBB, a OAB e entidades sindicais e feministas.</li>
+          </ul>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. Principais Conquistas e Desafios</h2>
+          <div class="space-y-3 text-xs sm:text-sm">
+            <p><strong>Cidadania Plena:</strong> Voto facultativo para jovens de 16 e 17 anos e para analfabetos; repúdio formal à tortura; imprescritibilidade do racismo.</p>
+            <p><strong>Seguridade Social:</strong> Criação da Seguridade Social com a tríade <em>Saúde (SUS), Previdência e Assistência Social (LOAS/BPC)</em>.</p>
+            <p><strong>Pacto Federativo e Freios Democráticos:</strong> Fortalecimento sem precedentes do Ministério Público como guardião da ordem jurídica e das minorias, além da ampliação dos legitimados para proposição de Ações Diretas de Inconstitucionalidade (ADIs) no STF.</p>
+          </div>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

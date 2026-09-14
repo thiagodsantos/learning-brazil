@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descobrimento do Brasil (1500) — História do Brasil</title>
+  <meta name="description" content="A chegada dos portugueses comandados por Pedro Álvares Cabral em 1500, a Carta de Pero Vaz de Caminha e os impactos para os povos originários.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Mermaid 11 via ESM -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <!-- Top meta -->
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-emerald-400">Colônia</span>
+        <span>/</span>
+        <span class="text-slate-200">Descobrimento do Brasil</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Descobrimento do Brasil (1500)
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        A expedição de Pedro Álvares Cabral, o encontro entre culturas pré-colombianas e a Coroa Portuguesa, e o início da colonização mercantile extrativista.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>Fluxograma do Evento & Dinâmica Colonial</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Expedição Portuguesa - Pedro Álvares Cabral] -->|Navegação pelo Atlântico Sul| B[22 de Abril de 1500: Avistamento do Monte Pascoal]
+    B --> C[Aportamento em Porto Seguro / Bahia]
+    C --> D[Carta de Pero Vaz de Caminha ao Rei D. Manuel I]
+    D --> E[Primeiros Contatos com Povos Tupiniquins]
+    E -->|Fase Extrativista: 1500 - 1530| F[Escambo do Pau-Brasil e Feitorias Costeiras]
+    F --> G[Doenças Europeias, Conflitos e Início da Ocupação Sistemática]
+    G --> H[Capitanias Hereditárias em 1534]
+          </pre>
+        </div>
+      </section>
+
+      <!-- Conteúdo detalhado dividido em seções -->
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. O que Aconteceu</h2>
+          <p class="mb-3">
+            Em 22 de abril de 1500, a armada lusitana comandada pelo fidalgo Pedro Álvares Cabral, composta por 13 embarcações e cerca de 1.500 homens, avistou terras que inicialmente foram batizadas de "Ilha de Vera Cruz" e, posteriormente, "Terra de Santa Cruz". O objetivo oficial era navegar contornando a África em direção às Índias para consolidar o comércio de especiarias estabelecido por Vasco da Gama em 1498.
+          </p>
+          <p>
+            Historiadores apontam que a rota intencionalmente se afastou da costa africana ("volta do mar"), havendo fortes indícios de que Portugal já possuía conhecimento prévio da existência de terras a oeste, o que justificou as negociações do <strong>Tratado de Tordesilhas (1494)</strong>, que dividiu as terras a serem descobertas com a Espanha a 370 léguas das ilhas de Cabo Verde.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. A Carta de Pero Vaz de Caminha e o Primeiro Contato</h2>
+          <p class="mb-3">
+            O escrivão Pero Vaz de Caminha redigiu a carta ao rei Dom Manuel I, considerada a "certidão de nascimento" do Brasil colonial. No texto, Caminha descreve a exuberância da natureza, a ausência aparente de metais preciosos imediatos e a curiosidade recíproca dos povos indígenas locais (predominantemente Tupiniquins):
+          </p>
+          <blockquote class="p-4 my-3 border-l-4 border-amber-400 bg-slate-950/60 rounded-r-xl italic text-slate-300 text-xs sm:text-sm">
+            "Até agora não pudemos saber se há ouro ou prata nela, ou outra coisa de metal, ou ferro; nem lha vimos. Contudo a terra em si é de muito bons ares, frescos e temperados [...]. Em tal maneira é graciosa que, querendo-a aproveitar, dar-se-á nela tudo; por causa das águas que tem!"
+          </blockquote>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-rose-400">3. Efeitos Colaterais e Impacto Histórico</h2>
+          <ul class="list-disc list-inside space-y-2 text-slate-300">
+            <li><strong>Genocídio e Epidemias:</strong> Estima-se que viviam de 3 a 5 milhões de indígenas em território brasileiro em 1500. A introdução de patógenos europeus (gripe, varíola, sarampo) e as guerras de conquista reduziram drasticamente essa população nos primeiros dois séculos.</li>
+            <li><strong>Economia do Escambo e Exploração do Pau-Brasil:</strong> Nos primeiros 30 anos (período pré-colonial), os portugueses estabeleceram feitorias costeiras. Indígenas cortavam e transportavam as toras em troca de ferramentas de ferro, tecidos e espelhos.</li>
+            <li><strong>Transição para a Colonização Efetiva:</strong> As ameaças de corsários franceses levaram a Coroa a enviar a expedição colonizadora de Martim Afonso de Sousa em 1530 e a criar as <strong>Capitanias Hereditárias em 1534</strong>, dando início à lavoura canavieira e à escravização sistemática.</li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- Paginação Anterior/Próximo -->
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo sobre a História do Brasil — Roadmap & Guia Completo</title>
+  <meta name="description" content="Site educativo e roteiro cronológico interativo sobre a história do Brasil, da colônia aos desafios políticos e econômicos contemporâneos.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brazil: {
+              green: '#009c3b',
+              yellow: '#ffdf00',
+              blue: '#002776'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+
+  <!-- Header Dinâmico -->
+  <header id="site-header"></header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 border-b border-slate-800/80 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-mono uppercase tracking-wider mb-6">
+        <span>🇧🇷 Da Colônia aos Desafios Contemporâneos</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+        Compreenda a formação, política e economia da <span class="bg-gradient-to-r from-amber-400 via-emerald-400 to-cyan-400 bg-clip-text text-transparent">História do Brasil</span>
+      </h1>
+      <p class="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        Um guia analítico e cronológico detalhado com 21 temas essenciais: da chegada dos portugueses, escravidão e formação do Estado republicano às crises fiscais, escândalos e instituições modernas.
+      </p>
+
+      <!-- Quick Metrics -->
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
+        <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/60 backdrop-blur">
+          <p class="text-2xl sm:text-3xl font-extrabold text-amber-400">21</p>
+          <p class="text-xs text-slate-400 mt-1 uppercase font-mono">Tópicos Essenciais</p>
+        </div>
+        <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/60 backdrop-blur">
+          <p class="text-2xl sm:text-3xl font-extrabold text-emerald-400">520+</p>
+          <p class="text-xs text-slate-400 mt-1 uppercase font-mono">Anos em Perspectiva</p>
+        </div>
+        <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/60 backdrop-blur">
+          <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">21</p>
+          <p class="text-xs text-slate-400 mt-1 uppercase font-mono">Diagramas Mermaid</p>
+        </div>
+        <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/60 backdrop-blur">
+          <p class="text-2xl sm:text-3xl font-extrabold text-violet-400">100%</p>
+          <p class="text-xs text-slate-400 mt-1 uppercase font-mono">Gratuito & Aberto</p>
+        </div>
+      </div>
+
+      <!-- Controls: Filter & Search -->
+      <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
+        <div class="relative w-full sm:w-80">
+          <input type="text" id="roadmap-filter-input" placeholder="Buscar no roadmap..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-amber-400 shadow-inner">
+          <svg class="w-4 h-4 absolute right-3.5 top-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <div class="flex items-center space-x-2 w-full sm:w-auto overflow-x-auto pb-2 sm:pb-0" id="category-pills">
+          <button class="cat-pill active px-3.5 py-1.5 rounded-lg text-xs font-medium bg-amber-400 text-slate-950 hover:bg-amber-300 transition" data-cat="all">Todos</button>
+          <button class="cat-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-cat="Colônia">Colônia & Império</button>
+          <button class="cat-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-cat="Instituições">Instituições</button>
+          <button class="cat-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-cat="Economia">Economia</button>
+          <button class="cat-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-cat="Crises Políticas">Crises & Justiça</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Cronológico Interativo -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-1 w-full">
+    <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between border-b border-slate-800 pb-6 gap-4">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-center space-x-3">
+          <span>Trilha de Aprendizado Cronológica</span>
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">Siga a ordem dos acontecimentos do mais antigo (1500) aos desdobramentos atuais.</p>
+      </div>
+      <div class="text-xs text-slate-400 flex items-center space-x-4">
+        <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400 mr-1.5"></span>Histórico</span>
+        <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-cyan-400 mr-1.5"></span>Institucional</span>
+        <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 mr-1.5"></span>Econômico</span>
+        <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-rose-400 mr-1.5"></span>Crises & Justiça</span>
+      </div>
+    </div>
+
+    <!-- Timeline Container -->
+    <div class="relative border-l-2 border-slate-800 ml-4 sm:ml-8 md:ml-32 space-y-8" id="roadmap-list">
+      <!-- Inserido dinamicamente via JS com base em TOPICS_DATA -->
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="site-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/topics-data.js"></script>
+  <script src="./assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const roadmapContainer = document.getElementById('roadmap-list');
+      const filterInput = document.getElementById('roadmap-filter-input');
+      const categoryPills = document.querySelectorAll('.cat-pill');
+
+      let currentCategory = 'all';
+      let currentQuery = '';
+
+      function getBadgeColor(cat) {
+        if (cat.includes('Colônia') || cat.includes('Império') || cat.includes('República')) {
+          return 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30';
+        } else if (cat.includes('Instituições') || cat.includes('Política')) {
+          return 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30';
+        } else if (cat.includes('Economia') || cat.includes('Era Vargas')) {
+          return 'bg-amber-500/10 text-amber-400 border-amber-500/30';
+        } else {
+          return 'bg-rose-500/10 text-rose-400 border-rose-500/30';
+        }
+      }
+
+      function renderRoadmap() {
+        if (!roadmapContainer || typeof TOPICS_DATA === 'undefined') return;
+
+        const filtered = TOPICS_DATA.filter(topic => {
+          const matchQuery = topic.title.toLowerCase().includes(currentQuery) ||
+                             topic.description.toLowerCase().includes(currentQuery) ||
+                             topic.period.toLowerCase().includes(currentQuery);
+          
+          let matchCategory = true;
+          if (currentCategory !== 'all') {
+            if (currentCategory === 'Colônia') {
+              matchCategory = topic.category.includes('Colônia') || topic.category.includes('Império') || topic.category.includes('República Velha');
+            } else if (currentCategory === 'Instituições') {
+              matchCategory = topic.category.includes('Instituições') || topic.category.includes('Política') || topic.category.includes('Redemocratização');
+            } else if (currentCategory === 'Economia') {
+              matchCategory = topic.category.includes('Economia') || topic.category.includes('Era Vargas');
+            } else if (currentCategory === 'Crises Políticas') {
+              matchCategory = topic.category.includes('Crises') || topic.category.includes('Corrupção') || topic.category.includes('Segurança') || topic.category.includes('Gestão');
+            }
+          }
+
+          return matchQuery && matchCategory;
+        });
+
+        if (filtered.length === 0) {
+          roadmapContainer.innerHTML = `
+            <div class="p-8 text-center bg-slate-900/40 rounded-xl border border-slate-800 text-slate-400">
+              <p class="text-base">Nenhum tópico corresponde aos filtros selecionados.</p>
+              <button id="clear-filters" class="mt-3 text-xs text-amber-400 underline hover:text-amber-300">Limpar filtros</button>
+            </div>
+          `;
+          document.getElementById('clear-filters')?.addEventListener('click', () => {
+            currentCategory = 'all';
+            currentQuery = '';
+            filterInput.value = '';
+            categoryPills.forEach(p => p.classList.toggle('active', p.getAttribute('data-cat') === 'all'));
+            updatePillStyles();
+            renderRoadmap();
+          });
+          return;
+        }
+
+        roadmapContainer.innerHTML = filtered.map((topic, index) => {
+          const badgeClass = getBadgeColor(topic.category);
+          return `
+            <div class="relative pl-6 sm:pl-10 group timeline-item">
+              <!-- Timeline Marker Icon -->
+              <div class="absolute -left-3.5 sm:-left-4 top-1.5 w-7 sm:w-8 h-7 sm:h-8 rounded-full bg-slate-900 border-2 border-slate-700 group-hover:border-amber-400 group-hover:bg-amber-400/10 flex items-center justify-center text-xs sm:text-sm transition-colors duration-200">
+                <span>${topic.icon}</span>
+              </div>
+
+              <!-- Content Card -->
+              <div class="bg-slate-900/70 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 rounded-2xl p-5 sm:p-6 transition shadow-lg hover:shadow-xl">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                  <div class="flex items-center space-x-2">
+                    <span class="text-xs font-mono font-bold text-slate-500">#${String(topic.order).padStart(2, '0')}</span>
+                    <span class="text-xs uppercase font-mono px-2.5 py-0.5 rounded-full border ${badgeClass}">
+                      ${topic.category}
+                    </span>
+                    <span class="text-xs text-slate-400 flex items-center font-mono">
+                      <svg class="w-3.5 h-3.5 mr-1 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                      ${topic.readTime}
+                    </span>
+                  </div>
+                  <span class="text-xs font-mono font-medium text-amber-400/90 bg-amber-400/10 border border-amber-400/20 px-2.5 py-0.5 rounded-md self-start sm:self-auto">
+                    ${topic.period}
+                  </span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-400 transition mb-2">
+                  <a href="./topics/${topic.slug}.html" class="focus:outline-none">
+                    ${topic.title}
+                  </a>
+                </h3>
+
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                  ${topic.description}
+                </p>
+
+                <div class="flex items-center justify-between pt-3 border-t border-slate-800/60">
+                  <span class="text-xs text-slate-500 flex items-center space-x-1">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <span>Com Diagrama Mermaid & Análise</span>
+                  </span>
+                  <a href="./topics/${topic.slug}.html" class="inline-flex items-center space-x-1 text-xs font-semibold text-amber-400 hover:text-amber-300 transition">
+                    <span>Estudar Tópico</span>
+                    <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function updatePillStyles() {
+        categoryPills.forEach(pill => {
+          const isAct = pill.getAttribute('data-cat') === currentCategory;
+          if (isAct) {
+            pill.className = "cat-pill px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-amber-400 text-slate-950 transition";
+          } else {
+            pill.className = "cat-pill px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:bg-slate-700 transition";
+          }
+        });
+      }
+
+      categoryPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          currentCategory = pill.getAttribute('data-cat');
+          updatePillStyles();
+          renderRoadmap();
+        });
+      });
+
+      filterInput?.addEventListener('input', (e) => {
+        currentQuery = e.target.value.toLowerCase().trim();
+        renderRoadmap();
+      });
+
+      renderRoadmap();
+    });
+  </script>
+</body>
+</html>

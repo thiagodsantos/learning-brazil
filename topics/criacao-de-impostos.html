@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criação de Impostos no Brasil — História do Brasil</title>
+  <meta name="description" content="Histórico dos tributos no Brasil: do Quinto do Ouro colonial e Derrama aos impostos modernos (ICMS, ISS, IRPF, IPI, PIS/Cofins) e a Reforma Tributária.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-amber-400">Economia & Estado</span>
+        <span>/</span>
+        <span class="text-slate-200">Criação de Impostos</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Criação de Impostos e o Sistema Tributário no Brasil
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        Da revolta colonial contra o "Quinto" e a Derrama em Minas Gerais até o complexo pacto federativo moderno e a unificação do IVA (IBS/CBS).
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>Arquitetura da Arrecadação e Repartição Federativa</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    subgraph Esfera Federal - União
+      A1[IRPF / IRPJ - Renda] 
+      A2[IPI - Produtos Industrializados]
+      A3[PIS / COFINS - Faturamento]
+      A4[IOF - Operações Financeiras]
+    end
+
+    subgraph Esfera Estadual
+      B1[ICMS - Circulação de Mercadorias e Serviços]
+      B2[IPVA - Propriedade de Veículos]
+      B3[ITCMD - Herança e Doação]
+    end
+
+    subgraph Esfera Municipal
+      C1[ISS - Serviços de Qualquer Natureza]
+      C2[IPTU - Propriedade Territorial Urbana]
+      C3[ITBI - Transmissão de Bens Imóveis]
+    end
+
+    A1 & A2 --> D[Fundo de Participação dos Estados - FPE & FPM]
+    B1 --> E[Cota-Parte Municipal: 25% para os Municípios]
+    
+    D & E & C1 & C2 --> F[Serviços Públicos: Saúde - SUS, Educação, Segurança, Infraestrutura e Previdência]
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">1. Origem Histórica: O Quinto e a Derrama</h2>
+          <p class="mb-3">
+            A cobrança de tributos no Brasil iniciou-se no século XVIII durante o ciclo do ouro em Minas Gerais. A Coroa Portuguesa instituiu o <strong>Quinto</strong> (20% de todo metal fundido nas Casas de Fundição). Quando a produção de ouro entrou em declínio natural e as metas de 100 arrobas anuais não eram atingidas, Portugal decretou a <strong>Derrama</strong> (cobrança forçada que confiscava bens dos colonos).
+          </p>
+          <p>
+            O peso opressivo da tributação régia foi o estopim direto para a <strong>Inconfidência Mineira (1789)</strong>, demonstrando desde os primórdios coloniais a tensão política em torno do destino da arrecadação pública.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">2. Principais Impostos Modernos: Onde é Arrecadado e Para Que Serve</h2>
+          
+          <div class="space-y-4 text-xs sm:text-sm">
+            <div class="p-4 bg-slate-950/70 border border-slate-800 rounded-xl">
+              <h3 class="font-bold text-amber-300">IRPF / IRPJ (Imposto de Renda Pessoa Física / Jurídica)</h3>
+              <p class="mt-1 text-slate-300"><strong>Criado em:</strong> 1922 pela Lei Orçamentária nº 4.625.</p>
+              <p><strong>Arrecadador:</strong> União (Receita Federal).</p>
+              <p><strong>Aplicação:</strong> Orçamento geral da União, saúde, previdência social, Forças Armadas e transferências obrigatórias para Estados e Municípios (FPE e FPM).</p>
+            </div>
+
+            <div class="p-4 bg-slate-950/70 border border-slate-800 rounded-xl">
+              <h3 class="font-bold text-emerald-300">ICMS (Imposto sobre Circulação de Mercadorias e Serviços)</h3>
+              <p class="mt-1 text-slate-300"><strong>Criado em:</strong> Sucessor do ICM de 1966, reformulado na Constituição de 1988.</p>
+              <p><strong>Arrecadador:</strong> Estados e Distrito Federal (maior fonte de receita estadual).</p>
+              <p><strong>Aplicação:</strong> Segurança pública (Polícia Militar/Civil), hospitais estaduais e universidades. 25% da receita pertence aos municípios do respectivo estado.</p>
+            </div>
+
+            <div class="p-4 bg-slate-950/70 border border-slate-800 rounded-xl">
+              <h3 class="font-bold text-cyan-300">ISS (Imposto Sobre Serviços)</h3>
+              <p class="mt-1 text-slate-300"><strong>Criado em:</strong> Regulamentado em 1966 e consolidado pela Lei Complementar 116/2003.</p>
+              <p><strong>Arrecadador:</strong> Municípios.</p>
+              <p><strong>Aplicação:</strong> Postos de saúde municipais (UBS), manutenção urbana, asfaltamento e escolas de ensino infantil e fundamental.</p>
+            </div>
+
+            <div class="p-4 bg-slate-950/70 border border-slate-800 rounded-xl">
+              <h3 class="font-bold text-violet-300">IPTU e IPVA (Impostos sobre Patrimônio)</h3>
+              <p class="mt-1 text-slate-300"><strong>IPTU:</strong> Arrecadado pelas prefeituras para obras urbanas e zeladoria.</p>
+              <p><strong>IPVA:</strong> Arrecadado pelos estados (50% repassado ao município onde o veículo está emplacado) para infraestrutura e serviços públicos gerais.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-cyan-400">3. A Reforma Tributária (EC 132/2023)</h2>
+          <p>
+            A promulgação da Emenda Constitucional 132/2023 instituiu o modelo de <strong>IVA Dual (Imposto sobre Valor Agregado)</strong> para simplificar o sistema: substituindo o PIS, Cofins e IPI pela <strong>CBS (Contribuição sobre Bens e Serviços)</strong> federal, e o ICMS e ISS pelo <strong>IBS (Imposto sobre Bens e Serviços)</strong> subnacional, com cobrança no destino da mercadoria e fim da cumulatividade.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>

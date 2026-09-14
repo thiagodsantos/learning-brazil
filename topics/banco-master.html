@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso Banco Master: Expansão Agressiva e Controvérsias — História do Brasil</title>
+  <meta name="description" content="A transformação do Banco Máxima no Banco Master, a captação agressiva via CDBs, as aquisições e o escrutínio do Banco Central.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brazil: { green: '#009c3b', yellow: '#ffdf00', blue: '#002776' } } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose' });
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-400 selection:text-slate-950">
+  <header id="site-header"></header>
+  <div id="sidebar-container"></div>
+
+  <div class="lg:pl-72 flex-1 flex flex-col">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full flex-1">
+      
+      <div class="flex items-center space-x-2 text-xs font-mono text-slate-400 mb-4">
+        <a href="../index.html" class="hover:text-amber-400">Roadmap</a>
+        <span>/</span>
+        <span class="text-amber-400">Economia Contemporânea</span>
+        <span>/</span>
+        <span class="text-slate-200">Banco Master</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Caso Banco Master: Expansão Agressiva e Controvérsias
+      </h1>
+      <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+        Como uma instituição à beira da liquidação transformou-se em um conglomerado financeiro bilionário sob forte escrutínio regulatório e midiático.
+      </p>
+
+      <!-- Diagrama Mermaid -->
+      <section class="mb-10">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-amber-400 mb-3 flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+          <span>A Trajetória de Reestruturação e Alavancagem</span>
+        </h2>
+        <div class="mermaid-container">
+          <pre class="mermaid">
+flowchart TD
+    A[Até 2018: Banco Máxima] -->|Patrimônio Líquido Negativo e Risco de Liquidação pelo BC| B[Entrada de Daniel Vorcaro e novos sócios]
+    B --> C[2021: Rebranding para Banco Master]
+    
+    subgraph Estratégia de Crescimento
+      C --> D1[Captação Agressiva no Varejo: CDBs com taxas muito acima do mercado - ex: 130% do CDI]
+      C --> D2[Foco em Crédito Consignado e Precatórios]
+      C --> D3[Aquisições: Banco Voiter, Will Bank e corretoras]
+    end
+
+    D1 & D2 & D3 --> E[Crescimento Exponencial do Balanço: De R$ 2 bi para mais de R$ 40 bi em ativos]
+    
+    subgraph Controvérsias e Escrutínio
+      E --> F1[Questionamentos sobre a qualidade da carteira de crédito]
+      E --> F2[Investigações jornalísticas sobre operações estruturadas e fundos exclusivos]
+      E --> F3[Monitoramento contínuo pelo Banco Central do Brasil]
+    end
+          </pre>
+        </div>
+      </section>
+
+      <article class="space-y-8 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-emerald-400">1. O Início: Do Máxima ao Master</h2>
+          <p class="mb-3">
+            Até 2018, o antigo Banco Máxima enfrentava uma grave crise de liquidez, com patrimônio líquido negativo e sob constante ameaça de intervenção ou liquidação extrajudicial pelo Banco Central. A virada ocorreu com a entrada do empresário mineiro <strong>Daniel Vorcaro</strong>, que injetou capital, assumiu o controle e iniciou um agressivo processo de reestruturação.
+          </p>
+          <p>
+            Em 2021, a instituição foi rebatizada como <strong>Banco Master</strong>, marcando o início de uma das expansões mais rápidas e comentadas do mercado financeiro brasileiro recente.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-amber-400">2. A Estratégia de Captação e Aquisições</h2>
+          <p class="mb-3">
+            O motor do crescimento do Master foi a captação de recursos de pessoas físicas através de plataformas de investimento (corretoras). O banco passou a oferecer <strong>CDBs (Certificados de Depósito Bancário) com rentabilidades muito superiores à média do mercado</strong>, atraindo bilhões de reais de investidores de varejo, amparados pela garantia do Fundo Garantidor de Créditos (FGC) até R$ 250 mil.
+          </p>
+          <p class="mb-3">
+            Com o caixa cheio, o banco diversificou suas operações para crédito consignado, antecipação de precatórios e operações estruturadas de crédito corporativo. Além disso, partiu para aquisições estratégicas, comprando o Banco Voiter (antigo Indusval) e o banco digital Will Bank, ampliando massivamente sua base de clientes.
+          </p>
+        </section>
+
+        <section class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+          <h2 class="text-xl font-bold text-white mb-3 text-rose-400">3. Controvérsias e Escrutínio do Mercado</h2>
+          <p class="mb-3">
+            O crescimento vertiginoso gerou desconfiança em setores do mercado financeiro e na imprensa especializada. Reportagens investigativas levantaram questionamentos sobre a qualidade e o risco real da carteira de crédito do banco, apontando para operações complexas envolvendo fundos de investimento exclusivos e debêntures de empresas com balanços frágeis.
+          </p>
+          <p>
+            O Banco Central mantém a instituição sob rigoroso monitoramento prudencial. A diretoria do Master, por sua vez, defende publicamente a solidez de seus balanços, afirmando que o banco é altamente capitalizado, lucrativo e que as críticas derivam do incômodo gerado pela concorrência agressiva imposta aos grandes bancos tradicionais.
+          </p>
+        </section>
+
+      </article>
+
+      <div id="topic-pagination"></div>
+
+    </main>
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="../assets/js/topics-data.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>
